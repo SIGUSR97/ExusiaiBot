@@ -1,5 +1,5 @@
 from typing import Tuple
-from dice import *
+from .dice import *
 from telegram import Update, ParseMode
 from telegram.ext import CallbackContext
 

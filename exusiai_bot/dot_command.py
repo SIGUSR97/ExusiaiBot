@@ -1,4 +1,3 @@
-import json
 from typing import Callable, Tuple, Union, Iterable
 from telegram import parsemode
 from telegram.ext import Dispatcher, CallbackContext, MessageHandler, Filters
@@ -40,7 +39,7 @@ class DotCommandDispatcher:
                 self._commands[command](update, context,
                                         argv=(command, args_string))
             except KeyError as e:
-                print(f"keyError {e=}")
+                print(f"keyError {e=} {dir(e)=}")
                 print(f"argv: {command=}, {args_string=}")
                 self._default(update, context, argv=(command, args_string))
 

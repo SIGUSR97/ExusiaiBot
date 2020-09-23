@@ -138,6 +138,7 @@ class Dice:
     ) -> str:
         if not self.rolled: raise DiceNotRolledError()
         result = self._get_rolls_string()
+        break_formatter = "{break}"
         formatted = formatter.format(
             **{
                 "result": result,
@@ -147,11 +148,22 @@ class Dice:
                 "multiplier": self.multiplier,
                 "bonus": self.bonus,
                 "dice_code": self.dice_code,
-                "break": "{break}",
+                "break": break_formatter,
             }, **formatter_data)
-        break_ = "\n" if len(
-            formatted) >= self.max_line_length - len("{break}") else ""
-        return formatted.format(**{"break": break_})
+        # break_ = "\n" if len(
+        #     formatted) >= self.max_line_length - len("{break}") else ""
+        res = ""
+        for line in formatted.splitlines():
+            if break_formatter in line:
+                untagged_line = re.subn(r"</?\w+?>", "", line)
+                break_ = "\n" if len(untagged_line) >= self.max_line_length - len(
+                    break_formatter) else ""
+                res = f"{res}\n{line.format(**{'break': break_})}"
+            else:
+                res = f"{res}\n{line}"
+        formatted = res
+        # print(f"{break_=}, {len(formatted)=}")
+        return formatted
 
     def _get_rolls_string(self) -> str:
         if self.repeats == 1:

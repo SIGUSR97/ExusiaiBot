@@ -10,9 +10,9 @@ from typing import Tuple
 from telegram.ext import CommandHandler, Updater, CallbackContext
 from telegram import ParseMode, Update
 
-from telegram_bot_utils import send_timed_message
-from dot_command import DotCommandDispatcher
-from dice_commands import dice_handler, dot_rd_handler
+from exusiai_bot.telegram_bot_utils import send_timed_message
+from exusiai_bot.dot_command import DotCommandDispatcher
+from exusiai_bot.dice_commands import dice_handler, dot_rd_handler
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
