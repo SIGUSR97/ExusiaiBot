@@ -36,12 +36,14 @@ class DotCommandDispatcher:
             print(f"received dot command: {command} {args_string}")
             # print(f"{self._commands=}")
             try:
-                self._commands[command](update, context,
-                                        argv=(command, args_string))
+                self._commands[command]
             except KeyError as e:
-                print(f"keyError {e=} {dir(e)=}")
+                # print(f"keyError {e=} {dir(e)=}")
                 print(f"argv: {command=}, {args_string=}")
                 self._default(update, context, argv=(command, args_string))
+            else:
+                self._commands[command](update, context,
+                                        argv=(command, args_string))
 
         self._dot_command_pattern = r"(?:^[\.。](?P<command>[\u4e00-\u9fa5a-zA-Z0-9]+)\s?)(?:(?P<args>.*)\s*)"
         dispatcher.add_handler(MessageHandler(Filters.regex(self._dot_command_pattern),
