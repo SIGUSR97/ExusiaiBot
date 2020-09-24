@@ -1,18 +1,15 @@
-from functools import update_wrapper
 import logging
 import os
-import re
-from pprint import pprint
-from random import randint, Random
 from datetime import datetime
+from random import Random
 from typing import Tuple
 
-from telegram.ext import CommandHandler, Updater, CallbackContext
 from telegram import ParseMode, Update
+from telegram.ext import CallbackContext, CommandHandler, Updater
 
-from exusiai_bot.telegram_bot_utils import send_timed_message
-from exusiai_bot.dot_command import DotCommandDispatcher
 from exusiai_bot.dice_commands import dice_handler, dot_rd_handler
+from exusiai_bot.dot_command import DotCommandDispatcher
+from exusiai_bot.telegram_bot_utils import send_timed_message
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
