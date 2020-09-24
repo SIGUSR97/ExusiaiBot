@@ -37,7 +37,7 @@ class DotCommandDispatcher:
             # print(f"{self._commands=}")
             command_handler = self._commands.get(command)
             if command_handler:
-                self._commands[command](update, context,
+                command_handler(update, context,
                                         argv=(command, args_string))
             else:
                 print(f"argv: {command=}, {args_string=}")
