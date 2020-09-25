@@ -7,7 +7,7 @@ from typing import Tuple
 import arrow
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, Updater
-from numpy.random import default_rng
+from numpy.random import default_rng, SeedSequence
 
 from exusiai_bot.dice_commands import dice_handler, dot_rd_handler, dot_command_filter
 from exusiai_bot.dot_command import DotCommandDispatcher
@@ -58,8 +58,10 @@ def dot_jrrp_handler(
 ) -> None:
     username = update.effective_user.username
     rp = default_rng(
-        hash((username, *arrow.utcnow().to("utc-8").isocalendar()))).integers(
-            0, 100, endpoint=True)
+        SeedSequence(
+            hash((username,
+                  *arrow.utcnow().to("utc-8").isocalendar())))).integers(
+                      0, 100, endpoint=True)
     chat_id = update.effective_chat.id
     msg = f"@{username} 今天的人品值是：**{rp}**。"
     context.bot.send_message(chat_id, text=msg, parse_mode=ParseMode.MARKDOWN)
