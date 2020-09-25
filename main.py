@@ -2,6 +2,7 @@ import logging
 import os
 import sys
 import ctypes
+import hashlib
 from datetime import datetime
 from random import Random
 from typing import Tuple
@@ -59,8 +60,8 @@ def dot_jrrp_handler(
     argv: Tuple[str],
 ) -> None:
     username = update.effective_user.username
-    temp = (username, *arrow.utcnow().to("utc-8").isocalendar())
-    hash_ = ctypes.c_size_t(hash(temp)).value
+    temp = "".join((username, *arrow.utcnow().to("utc-8").isocalendar()))
+    hash_ = int(hashlib.md5(temp.encode()).hexdigest(), 16) % sys.maxsize
     logging.info(f"in jrrp_handler: {temp=}, {hash_=}")
     rp = default_rng(SeedSequence(hash_)).integers(0, 100, endpoint=True)
     chat_id = update.effective_chat.id
