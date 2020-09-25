@@ -1,7 +1,8 @@
+import re
 from typing import Union
+
 from numpy import ndarray
 from numpy.random import default_rng
-import re
 
 
 class DiceError(Exception):

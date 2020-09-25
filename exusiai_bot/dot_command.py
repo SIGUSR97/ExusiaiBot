@@ -1,7 +1,7 @@
-from typing import Callable, Tuple, Union, Iterable
-from telegram import parsemode
-from telegram.ext import Dispatcher, CallbackContext, MessageHandler, Filters
-from telegram import Update, ParseMode
+from typing import Callable, Iterable, Tuple, Union
+
+from telegram import ParseMode, Update, parsemode
+from telegram.ext import CallbackContext, Dispatcher, Filters, MessageHandler
 
 
 class DotCommandDispatcher:

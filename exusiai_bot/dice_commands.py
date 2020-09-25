@@ -1,7 +1,9 @@
 from typing import Tuple
-from .dice import *
-from telegram import Update, ParseMode
+
+from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
+
+from .dice import *
 
 dice = Dice(
     max_line_length=47,
