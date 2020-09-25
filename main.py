@@ -4,6 +4,7 @@ from datetime import datetime
 from random import Random
 from typing import Tuple
 
+import arrow
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, Updater
 
@@ -56,7 +57,8 @@ def dot_jrrp_handler(
 ) -> None:
     username = update.effective_user.username
     rp = Random(hash(
-        (username, *datetime.now().isocalendar()))).randint(0, 100)
+        (username,
+         *arrow.utcnow().to("utc-8").isocalendar()))).randint(0, 100)
     chat_id = update.effective_chat.id
     msg = f"@{username} 今天的人品值是：**{rp}**。"
     context.bot.send_message(chat_id, text=msg, parse_mode=ParseMode.MARKDOWN)
