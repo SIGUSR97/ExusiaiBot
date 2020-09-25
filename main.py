@@ -78,6 +78,6 @@ updater.start_webhook(
 )
 updater.bot.setWebhook(
     f"https://exusiai-bot.herokuapp.com/{TELEGRAM_BOT_TOKEN}")
+updater.idle()
 logging.info("Exusiai Bot started")
 logging.info("アップルパイ！🥧")
-updater.idle()
