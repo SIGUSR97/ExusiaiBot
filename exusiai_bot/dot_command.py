@@ -63,3 +63,9 @@ class DotCommandDispatcher:
 
     def remove_command(self, name: str) -> None:
         del self._commands[name]
+
+    def add_global_filter(self, callback: Callable):
+        pass
+
+    def add_command_filter(self, callback: Callable):
+        pass
