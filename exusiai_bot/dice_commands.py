@@ -99,10 +99,13 @@ def dot_command_filter(
     argv: Tuple[str],
 ) -> FilterReturns:
     command, args_string = argv
-    match = re.match(r"(?:r(.+))", command)
+    match = re.match(r"(rd?)(.*)", command)
     logging.info(f"filter received command: {command} {args_string}, {match=}")
-    if match and Dice.test_dice_code(match.groups()[0]):
-        return update, context, ("r", f"{match.groups()[0]} {args_string}")
+    if match:
+        command_, arg = match.groups()
+        if command_ in ["r", "rd"] and Dice.test_dice_code(arg):
+            return update, context, (command_, f"{arg} {args_string}")
+
     return update, context, argv
 
 
