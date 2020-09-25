@@ -22,8 +22,8 @@ def dice_handler(
     argv: Tuple[str],
 ) -> None:
     print(f"dice argv: {argv}")
-    _, args = argv
-    args = args.split()
+    _, args_string = argv
+    args = args_string.split()
 
     usage_tip = ("Roll 命令 用法:\n"
                  "<b>.r</b> <i>(重复次数#)投掷次数[dD]骰子面数"
@@ -102,6 +102,7 @@ def dot_command_filter(
     match = re.match(r"(?:r(.+))", command)
     logging.info(f"filter received command: {command} {args_string}, {match=}")
     if match and Dice.test_dice_code(match.groups()[0]):
+        logging.info(f"{match.groups()}")
         return update, context, ("r", f"{match.string} {args_string}")
     return update, context, argv
 
