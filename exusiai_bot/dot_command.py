@@ -61,7 +61,7 @@ class DotCommandDispatcher:
                 self._default(update, context, argv=(command, args_string))
 
         self._dot_command_pattern = (
-            r"(?:^[\.。](?P<command>.+?)\s?)"
+            r"(?:^[\.。](?P<command>\S+)\s?)"
             r"(?:(?P<args>.*)\s*)")
         dispatcher.add_handler(
             MessageHandler(Filters.regex(self._dot_command_pattern),
