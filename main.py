@@ -57,11 +57,9 @@ def dot_jrrp_handler(
     argv: Tuple[str],
 ) -> None:
     username = update.effective_user.username
-    rp = default_rng(
-        SeedSequence(
-            hash((username,
-                  *arrow.utcnow().to("utc-8").isocalendar())))).integers(
-                      0, 100, endpoint=True)
+    hash_ = hash((username, *arrow.utcnow().to("utc-8").isocalendar()))
+    logging.info(f"in jrrp_handler: {hash_=}")
+    rp = default_rng(SeedSequence(hash_)).integers(0, 100, endpoint=True)
     chat_id = update.effective_chat.id
     msg = f"@{username} 今天的人品值是：**{rp}**。"
     context.bot.send_message(chat_id, text=msg, parse_mode=ParseMode.MARKDOWN)
