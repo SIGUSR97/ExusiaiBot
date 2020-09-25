@@ -7,7 +7,7 @@ from typing import Tuple
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, Updater
 
-from exusiai_bot.dice_commands import dice_handler, dot_rd_handler
+from exusiai_bot.dice_commands import dice_handler, dot_rd_handler, dot_command_filter
 from exusiai_bot.dot_command import DotCommandDispatcher
 from exusiai_bot.telegram_bot_utils import send_timed_message
 
@@ -69,6 +69,7 @@ dot_dispatcher = DotCommandDispatcher(dispatcher=dispatcher)
 dot_dispatcher.add_command("jrrp", dot_jrrp_handler)
 dot_dispatcher.add_command("r", dice_handler)
 dot_dispatcher.add_command("rd", dot_rd_handler)
+dot_dispatcher.set_filter(dot_command_filter)
 
 updater.start_webhook(
     listen="0.0.0.0",

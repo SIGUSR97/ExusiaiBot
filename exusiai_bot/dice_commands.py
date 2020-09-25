@@ -1,9 +1,11 @@
+import re
 from typing import Tuple
 
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 
 from .dice import *
+from .dot_command import FilterReturns
 
 dice = Dice(
     max_line_length=47,
@@ -87,8 +89,19 @@ def dot_rd_handler(
     argv: Tuple[str],
 ) -> None:
     cmd, args_string = argv
-    dice_handler(update, context,
-                 (cmd, args_string + " 1D100"))
+    dice_handler(update, context, (cmd, args_string + " 1D100"))
+
+
+def dot_command_filter(
+    update: Update,
+    context: CallbackContext,
+    argv: Tuple[str],
+) -> FilterReturns:
+    command, args_string = argv
+    match = re.match(r"(?:r(.+))", command)
+    if match and Dice.test_dice_code(match.string):
+        return update, context, ("r", f"{match.string} {args_string}")
+    return update, context, argv
 
 
 if __name__ == "__main__":
