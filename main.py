@@ -1,18 +1,16 @@
+import hashlib
 import logging
 import os
 import sys
-import ctypes
-import hashlib
-from datetime import datetime
-from random import Random
 from typing import Tuple
 
 import arrow
+from numpy.random import SeedSequence, default_rng
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, Updater
-from numpy.random import default_rng, SeedSequence
 
-from exusiai_bot.dice_commands import dice_handler, dot_rd_handler, dot_command_filter
+from exusiai_bot.dice_commands import (dice_handler, dot_command_filter,
+                                       dot_rd_handler)
 from exusiai_bot.dot_command import DotCommandDispatcher
 from exusiai_bot.telegram_bot_utils import send_timed_message
 
