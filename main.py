@@ -15,8 +15,7 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO)
 
-# TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
-TELEGRAM_BOT_TOKEN = "1361369142:AAFzRv8aMsNOfF_tEgnGT79WMcUGZcSZjGI"
+TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
 PROXY_URL = "http://127.0.0.1:1081"
 PORT = int(os.environ.get('PORT', 5000))
 
