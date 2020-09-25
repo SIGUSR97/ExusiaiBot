@@ -157,8 +157,9 @@ class Dice:
         for line in formatted.splitlines():
             if break_formatter in line:
                 untagged_line = re.subn(r"</?\w+?>", "", line)
-                break_ = "\n" if len(untagged_line) >= self.max_line_length - len(
-                    break_formatter) else ""
+                break_ = "\n" if len(
+                    untagged_line
+                ) >= self.max_line_length - len(break_formatter) else ""
                 res = f"{res}\n{line.format(**{'break': break_})}"
             else:
                 res = f"{res}\n{line}"
