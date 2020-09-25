@@ -60,7 +60,7 @@ def dot_jrrp_handler(
     argv: Tuple[str],
 ) -> None:
     username = update.effective_user.username
-    temp = "".join((username, *arrow.utcnow().to("utc-8").isocalendar()))
+    temp =  f"{username}{arrow.utcnow().to('utf-8').isocalendar()}"
     hash_ = int(hashlib.md5(temp.encode()).hexdigest(), 16) % sys.maxsize
     logging.info(f"in jrrp_handler: {temp=}, {hash_=}")
     rp = default_rng(SeedSequence(hash_)).integers(0, 100, endpoint=True)
