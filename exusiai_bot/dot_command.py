@@ -37,6 +37,7 @@ class DotCommandDispatcher:
             #     text=msg,
             #     parse_mode=ParseMode.HTML,
             # )
+            # 
 
         if not self._default:
             self._default = default
