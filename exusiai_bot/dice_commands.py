@@ -103,7 +103,7 @@ def dot_command_filter(
     logging.info(f"filter received command: {command} {args_string}, {match=}")
     if match:
         command_, arg = match.groups()
-        if command_ in ["r", "rd"] and Dice.test_dice_code(arg):
+        if command_ == "rd" or (command_ == "r" and Dice.test_dice_code(arg)):
             return update, context, (command_, f"{arg} {args_string}")
 
     return update, context, argv
