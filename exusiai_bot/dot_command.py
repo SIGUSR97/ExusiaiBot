@@ -1,3 +1,4 @@
+import logging
 from typing import Callable, Iterable, Optional, Tuple, Union
 
 from telegram import ParseMode, Update, parsemode
@@ -27,14 +28,15 @@ class DotCommandDispatcher:
             argv: Tuple[str],
         ) -> None:
             command, args_string = argv
-            msg = (f"Unknown dot command: "
-                   f"<b>.{command}</b> <i>{args_string}</i>\n"
-                   "Usage: <b>[.。](command)</b> <i>(arguments)*</i>")
-            context.bot.send_message(
-                chat_id=update.effective_chat.id,
-                text=msg,
-                parse_mode=ParseMode.HTML,
-            )
+            logging.info(f"received Unknown dot command {command=}, {args_string=}")
+            # msg = (f"Unknown dot command: "
+            #        f"<b>.{command}</b> <i>{args_string}</i>\n"
+            #        "Usage: <b>[.。](command)</b> <i>(arguments)*</i>")
+            # context.bot.send_message(
+            #     chat_id=update.effective_chat.id,
+            #     text=msg,
+            #     parse_mode=ParseMode.HTML,
+            # )
 
         if not self._default:
             self._default = default
@@ -53,6 +55,8 @@ class DotCommandDispatcher:
             if filtered:
                 update, command, argv = filtered
                 command, args_string = argv
+            else:
+                return
             command_handler = self._commands.get(command)
             if command_handler:
                 command_handler(update, context, argv=(command, args_string))
