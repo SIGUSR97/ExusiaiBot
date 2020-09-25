@@ -15,19 +15,28 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO)
 
-TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+# TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+TELEGRAM_BOT_TOKEN = "1361369142:AAFzRv8aMsNOfF_tEgnGT79WMcUGZcSZjGI"
 PROXY_URL = "http://127.0.0.1:1081"
+PORT = int(os.environ.get('PORT', 5000))
 
 request_kwargs = {"proxy_url": PROXY_URL}
 
-updater = Updater(token=TELEGRAM_BOT_TOKEN,
-                  use_context=True,
-                  request_kwargs=request_kwargs)
+updater = Updater(
+    token=TELEGRAM_BOT_TOKEN,
+    use_context=True,
+    # request_kwargs=request_kwargs,
+)
 dispatcher = updater.dispatcher
 
 
+def start(update: Update, context: CallbackContext):
+    print("command: /start")
+    context.bot.send_message(chat_id=update.effective_chat.id, text="Hi!")
+
+
 def test(update: Update, context: CallbackContext):
-    print('command: test')
+    print('command: /test')
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="I'm a bot, please talk to me!")
     send_timed_message(bot=context.bot,
@@ -54,6 +63,7 @@ def dot_jrrp_handler(
     context.bot.send_message(chat_id, text=msg, parse_mode=ParseMode.MARKDOWN)
 
 
+dispatcher.add_handler(CommandHandler('start', start))
 dispatcher.add_handler(CommandHandler('test', test))
 dispatcher.add_error_handler(error_handler)
 dot_dispatcher = DotCommandDispatcher(dispatcher=dispatcher)
@@ -61,5 +71,11 @@ dot_dispatcher.add_command("jrrp", dot_jrrp_handler)
 dot_dispatcher.add_command("r", dice_handler)
 dot_dispatcher.add_command("rd", dot_rd_handler)
 
-updater.start_polling()
+updater.start_webhook(
+    listen="0.0.0.0",
+    port=PORT,
+    url_path=TELEGRAM_BOT_TOKEN,
+)
+updater.bot.setWebhook(
+    f"https://exusiai-bot.herokuapp.com/{TELEGRAM_BOT_TOKEN}")
 updater.idle()
