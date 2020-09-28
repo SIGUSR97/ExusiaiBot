@@ -1,8 +1,9 @@
-from abc import ABC, abstractmethod
-from typing import Any
-from .probability_tree import ProbabilityNode
 import json
+from abc import ABC, abstractmethod
 from pathlib import Path
+from typing import Any
+
+from .probability_tree import ProbabilityNode
 from .utils import get_operator_infos
 
 
