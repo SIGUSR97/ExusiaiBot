@@ -89,6 +89,8 @@ class ProbabilityNode:
 
     @probability.setter
     def probability(self, value: Number) -> None:
+        if value > 1:
+            raise ValueError # TODO: Add error detail
         if isinstance(value, (int, float)):
             value = Decimal(f"{value:.{self.ROUND_TO}f}")
         diff = value - self._probability
