@@ -19,7 +19,6 @@ class ProbabilityNode:
         name: str = "",
         value: Any = None,
         children: List[ProbabilityNode] = None,
-        parent: Optional[ProbabilityNode] = None,
     ) -> None:
         self._probability = self._initial_probability = probability
         if isinstance(self.probability, (float, int)):
@@ -29,7 +28,8 @@ class ProbabilityNode:
         if not children:
             children = []
         self.children = children
-        self.parent = parent
+        for child in self.children:
+            child.parent = self
 
     def choice(self) -> ProbabilityNode:
         if not self.children:
