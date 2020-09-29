@@ -216,6 +216,7 @@ class Dice:
         dice_options: dict,
     ) -> None:
         throws = dice_options["throws"]
+        if not throws: throws = 1
         sides = dice_options["sides"]
 
         repeats = dice_options["repeats"]
@@ -229,7 +230,6 @@ class Dice:
         if sides <= 0 or sides > self.max_sides:
             raise SidesValueError(sides, self.max_sides)
 
-        if not throws: throws = 1
         self.throws = throws
         self.sides = sides
 
