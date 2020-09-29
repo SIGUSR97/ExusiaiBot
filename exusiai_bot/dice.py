@@ -76,7 +76,7 @@ class DiceNotRolledError(DiceError):
 class Dice:
     DICE_CODE_PAT = (
         r"(?:(?P<repeats>[0-9]+)#)?"
-        r"(?:(?P<throws>[0-9]+)[dD](?P<sides>[0-9]+))"
+        r"(?:(?P<throws>[0-9]+)?[dD](?P<sides>[0-9]+))"
         r"(?:[\*xX](?P<multiplier>[0-9]+))?"
         r"(?P<bonus>[\+-][0-9])?"
     ) # yapf: disable
@@ -229,6 +229,7 @@ class Dice:
         if sides <= 0 or sides > self.max_sides:
             raise SidesValueError(sides, self.max_sides)
 
+        if not throws: throws = 1
         self.throws = throws
         self.sides = sides
 
