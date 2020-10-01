@@ -93,6 +93,61 @@ def dot_rd_handler(
     dice_handler(update, context, (cmd, args_string + " 1D100"))
 
 
+def get_bobing_result(roll: str):
+    prizes = [
+        "状元插金花",
+        "满堂红",
+        "遍地锦",
+        "六勃黑",
+        "五王",
+        "状元",
+        "对堂",
+        "三红",
+        "四进",
+        "二举",
+        "一秀",
+    ]
+    pat = (r"(?P<{0}>114444)|"
+           r"(?P<{1}>444444)|"
+           r"(?P<{2}>111111)|"
+           r"(?P<{3}>55555)|"
+           r"(?P<{4}>44444)|"
+           r"(?P<{5}>4444)|"
+           r"(?P<{6}>123456)|"
+           r"(?P<{7}>444)|"
+           r"(?P<{8}>(?P<temp>\d)(?P=temp){{3}})|"
+           r"(?P<{9}>44)|"
+           r"(?P<{10}>4)").format(*prizes)
+
+    roll = "".join(map(str, sorted(roll)))
+
+    match = re.search(pat, roll)
+    if re.match(r"[1-6]{6}", roll) and match:
+        res, = [k for k, v in match.groupdict().items() if v and k != "temp"]
+        return res
+    return
+
+
+def bobing(
+    update: Update,
+    context: CallbackContext,
+    argv: Tuple[str],
+) -> None:
+    dice.roll("6d6")
+    result = get_bobing_result(sorted(dice.rolls))
+    username = update.effective_user.username
+
+    msg = f"<b>@{username}</b> 的博饼结果:\n"
+    if result:
+        msg += dice.get_message(f"{{result}}={result}")
+    else:
+        msg += dice.get_message(f"{{result}}=什么都没有")
+
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text=msg,
+                             parse_mode=ParseMode.HTML)
+
+
 def dot_command_filter(
     update: Update,
     context: CallbackContext,
@@ -100,7 +155,8 @@ def dot_command_filter(
 ) -> FilterReturns:
     command, args_string = argv
     match = re.match(r"(rd?)(.*)", command)
-    logging.info(f"filter received command: {command=}。 {args_string=}, {match=}")
+    logging.info(
+        f"filter received command: {command=}。 {args_string=}, {match=}")
     if match:
         command_, arg = match.groups()
         if command_ == "r" and Dice.test_dice_code(arg):

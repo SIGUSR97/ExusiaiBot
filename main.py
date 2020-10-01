@@ -10,7 +10,7 @@ from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, Updater
 
 from exusiai_bot.dice_commands import (dice_handler, dot_command_filter,
-                                       dot_rd_handler)
+                                       dot_rd_handler, bobing)
 from exusiai_bot.dot_command import DotCommandDispatcher
 from exusiai_bot.telegram_bot_utils import send_timed_message
 
@@ -64,7 +64,7 @@ def dot_jrrp_handler(
     rp = default_rng(SeedSequence(hash_)).integers(0, 100, endpoint=True)
     chat_id = update.effective_chat.id
     msg = f"@{username} 今天的人品值是：**{rp}**。"
-    context.bot.send_message(chat_id, text=msg, parse_mode=ParseMode.MARKDOWN)
+    context.bot.send_messzage(chat_id, text=msg, parse_mode=ParseMode.MARKDOWN)
 
 
 dispatcher.add_handler(CommandHandler('start', start))
@@ -74,6 +74,7 @@ dot_dispatcher = DotCommandDispatcher(dispatcher=dispatcher)
 dot_dispatcher.add_command("jrrp", dot_jrrp_handler)
 dot_dispatcher.add_command("r", dice_handler)
 dot_dispatcher.add_command("rd", dot_rd_handler)
+dot_dispatcher.add_command("博饼", bobing)
 dot_dispatcher.set_filter(dot_command_filter)
 
 updater.start_webhook(
