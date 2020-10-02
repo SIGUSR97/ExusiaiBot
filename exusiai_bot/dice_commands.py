@@ -96,37 +96,39 @@ def dot_rd_handler(
 def get_bobing_result(roll: str):
     prizes = [
         "状元插金花",
-        "满堂红",
-        "遍地锦",
-        "六勃黑",
-        "五王",
-        "状元",
+        "红六勃",
+        "黑六勃",
+        "红五",
+        "五子",
+        "红四",
         "对堂",
         "三红",
         "四进",
         "二举",
         "一秀",
+        "无",
     ]
-    pat = (r"(?P<{0}>114444)|"
-           r"(?P<{1}>444444)|"
-           r"(?P<{2}>111111)|"
-           r"(?P<{3}>55555)|"
-           r"(?P<{4}>44444)|"
-           r"(?P<{5}>4444)|"
-           r"(?P<{6}>123456)|"
-           r"(?P<{7}>444)|"
-           r"(?P<{8}>(?P<temp>\d)(?P=temp){{3}})|"
-           r"(?P<{9}>44)|"
-           r"(?P<{10}>4)").format(*prizes)
+
+    pat = (
+        r"(?P<{0}>114444)|"                  # 状元插金花
+        r"(?P<{1}>444444)|"                  # 红六勃
+        r"(?P<{2}>(?P<t1>\d)(?P=t1){{5}})|"  # 黑六勃
+        r"(?P<{3}>44444)|"                   # 红五
+        r"(?P<{4}>(?P<t2>\d)(?P=t2){{4}})|"  # 五子
+        r"(?P<{5}>4444)|"                    # 红四
+        r"(?P<{6}>123456)|"                  # 对堂
+        r"(?P<{7}>444)|"                     # 三红
+        r"(?P<{8}>(?P<t3>\d)(?P=t3){{3}})|"  # 四进
+        r"(?P<{9}>44)|"                      # 二举
+        r"(?P<{10}>4)").format(*prizes)      # 一秀 yapf: disable
 
     roll = "".join(map(str, sorted(roll)))
 
     match = re.search(pat, roll)
     if re.match(r"[1-6]{6}", roll) and match:
-        res, = [k for k, v in match.groupdict().items() if v and k != "temp"]
+        res, = [k for k, v in match.groupdict().items() if v and k[0] != "t"]
         return res
     return
-
 
 def bobing(
     update: Update,
@@ -137,11 +139,11 @@ def bobing(
     result = get_bobing_result(sorted(dice.rolls))
     username = update.effective_user.username
 
-    msg = f"<b>@{username}</b> 的博饼结果:\n"
+    msg = f"<b>@{username}</b> 的博饼结果:"
     if result:
-        msg += dice.get_message(f"{{result}}={result}")
-    else:
-        msg += dice.get_message(f"{{result}}=什么都没有")
+        msg += dice.get_message(f"{{result}}: {result}")
+    else: 
+        msg += dice.get_message(f"{{result}}: 什么都没有")
 
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text=msg,
