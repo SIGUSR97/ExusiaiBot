@@ -1,0 +1,968 @@
+[
+    {
+        "cn_name": "12F",
+        "rarity": "1",
+        "class": "术师",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "Castle-3",
+        "rarity": "0",
+        "class": "近卫",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "Lancet-2",
+        "rarity": "0",
+        "class": "医疗",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "THRM-EX",
+        "rarity": "0",
+        "class": "特种",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "W",
+        "rarity": "5",
+        "class": "狙击",
+        "approach": "限定寻访"
+    },
+    {
+        "cn_name": "临光",
+        "rarity": "4",
+        "class": "重装",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "亚叶",
+        "rarity": "4",
+        "class": "医疗",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "伊桑",
+        "rarity": "3",
+        "class": "特种",
+        "approach": "凭证交易所"
+    },
+    {
+        "cn_name": "伊芙利特",
+        "rarity": "5",
+        "class": "术师",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "傀影",
+        "rarity": "5",
+        "class": "特种",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "克洛丝",
+        "rarity": "2",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "凛冬",
+        "rarity": "4",
+        "class": "先锋",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "初雪",
+        "rarity": "4",
+        "class": "辅助",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "刻俄柏",
+        "rarity": "5",
+        "class": "术师",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "刻刀",
+        "rarity": "3",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "华法琳",
+        "rarity": "4",
+        "class": "医疗",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "卡缇",
+        "rarity": "2",
+        "class": "重装",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "卡达",
+        "rarity": "3",
+        "class": "术师",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "古米",
+        "rarity": "3",
+        "class": "重装",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "可颂",
+        "rarity": "4",
+        "class": "重装",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "史尔特尔",
+        "rarity": "5",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "史都华德",
+        "rarity": "2",
+        "class": "术师",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "吽",
+        "rarity": "4",
+        "class": "重装",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "嘉维尔",
+        "rarity": "3",
+        "class": "医疗",
+        "approach": "信用交易所"
+    },
+    {
+        "cn_name": "四月",
+        "rarity": "4",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "因陀罗",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "地灵",
+        "rarity": "3",
+        "class": "辅助",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "坚雷",
+        "rarity": "3",
+        "class": "重装",
+        "approach": "信用交易所"
+    },
+    {
+        "cn_name": "塞雷娅",
+        "rarity": "5",
+        "class": "重装",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "夜刀",
+        "rarity": "1",
+        "class": "先锋",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "夜烟",
+        "rarity": "3",
+        "class": "术师",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "夜莺",
+        "rarity": "5",
+        "class": "医疗",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "夜魔",
+        "rarity": "4",
+        "class": "术师",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "天火",
+        "rarity": "4",
+        "class": "术师",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "孑",
+        "rarity": "3",
+        "class": "特种",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "守林人",
+        "rarity": "4",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "安哲拉",
+        "rarity": "4",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "安德切尔",
+        "rarity": "2",
+        "class": "狙击",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "安比尔",
+        "rarity": "3",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "安洁莉娜",
+        "rarity": "5",
+        "class": "辅助",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "安赛尔",
+        "rarity": "2",
+        "class": "医疗",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "宴",
+        "rarity": "3",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "崖心",
+        "rarity": "4",
+        "class": "特种",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "巡林者",
+        "rarity": "1",
+        "class": "狙击",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "巫恋",
+        "rarity": "4",
+        "class": "辅助",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "布洛卡",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "年",
+        "rarity": "5",
+        "class": "重装",
+        "approach": "限定寻访"
+    },
+    {
+        "cn_name": "幽灵鲨",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "微风",
+        "rarity": "4",
+        "class": "医疗",
+        "approach": "凭证交易所"
+    },
+    {
+        "cn_name": "德克萨斯",
+        "rarity": "4",
+        "class": "先锋",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "惊蛰",
+        "rarity": "4",
+        "class": "术师",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "慑砂",
+        "rarity": "4",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "慕斯",
+        "rarity": "3",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "拉普兰德",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "拜松",
+        "rarity": "4",
+        "class": "重装",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "推进之王",
+        "rarity": "5",
+        "class": "先锋",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "斑点",
+        "rarity": "2",
+        "class": "重装",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "断崖",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "断罪者",
+        "rarity": "3",
+        "class": "近卫",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "斯卡蒂",
+        "rarity": "5",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "早露",
+        "rarity": "5",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "星极",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "星熊",
+        "rarity": "5",
+        "class": "重装",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "普罗旺斯",
+        "rarity": "4",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "暗索",
+        "rarity": "3",
+        "class": "特种",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "暴行",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "预约奖励 周年奖励"
+    },
+    {
+        "cn_name": "月禾",
+        "rarity": "4",
+        "class": "辅助",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "月见夜",
+        "rarity": "2",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "末药",
+        "rarity": "3",
+        "class": "医疗",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "杜宾",
+        "rarity": "3",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "杜林",
+        "rarity": "1",
+        "class": "术师",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "杰西卡",
+        "rarity": "3",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "极境",
+        "rarity": "4",
+        "class": "先锋",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "柏喙",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "格劳克斯",
+        "rarity": "4",
+        "class": "辅助",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "格拉尼",
+        "rarity": "4",
+        "class": "先锋",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "格雷伊",
+        "rarity": "3",
+        "class": "术师",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "桃金娘",
+        "rarity": "3",
+        "class": "先锋",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "梅",
+        "rarity": "3",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "梅尔",
+        "rarity": "4",
+        "class": "辅助",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "梓兰",
+        "rarity": "2",
+        "class": "辅助",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "棘刺",
+        "rarity": "5",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "森蚺",
+        "rarity": "5",
+        "class": "重装",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "槐琥",
+        "rarity": "4",
+        "class": "特种",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "泡普卡",
+        "rarity": "2",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "波登可",
+        "rarity": "3",
+        "class": "辅助",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "流星",
+        "rarity": "3",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "深海色",
+        "rarity": "3",
+        "class": "辅助",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "清流",
+        "rarity": "3",
+        "class": "医疗",
+        "approach": "限时礼包"
+    },
+    {
+        "cn_name": "清道夫",
+        "rarity": "3",
+        "class": "先锋",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "温蒂",
+        "rarity": "5",
+        "class": "特种",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "火神",
+        "rarity": "4",
+        "class": "重装",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "灰喉",
+        "rarity": "4",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "炎客",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "炎熔",
+        "rarity": "2",
+        "class": "术师",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "煌",
+        "rarity": "5",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "燧石",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "特米米",
+        "rarity": "4",
+        "class": "术师",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "狮蝎",
+        "rarity": "4",
+        "class": "特种",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "猎蜂",
+        "rarity": "3",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "玫兰莎",
+        "rarity": "2",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "白金",
+        "rarity": "4",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "白雪",
+        "rarity": "3",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "白面鸮",
+        "rarity": "4",
+        "class": "医疗",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "真理",
+        "rarity": "4",
+        "class": "辅助",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "石棉",
+        "rarity": "4",
+        "class": "重装",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "砾",
+        "rarity": "3",
+        "class": "特种",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "稀音",
+        "rarity": "4",
+        "class": "辅助",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "空",
+        "rarity": "4",
+        "class": "辅助",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "空爆",
+        "rarity": "2",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "米格鲁",
+        "rarity": "2",
+        "class": "重装",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "红",
+        "rarity": "4",
+        "class": "特种",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "红云",
+        "rarity": "3",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "红豆",
+        "rarity": "3",
+        "class": "先锋",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "缠丸",
+        "rarity": "3",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "翎羽",
+        "rarity": "2",
+        "class": "先锋",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "能天使",
+        "rarity": "5",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "艾丝黛尔",
+        "rarity": "3",
+        "class": "近卫",
+        "approach": "公开招募"
+    },
+    {
+        "cn_name": "艾雅法拉",
+        "rarity": "5",
+        "class": "术师",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "芙兰卡",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "芙蓉",
+        "rarity": "2",
+        "class": "医疗",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "芬",
+        "rarity": "2",
+        "class": "先锋",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "芳汀",
+        "rarity": "3",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "苇草",
+        "rarity": "4",
+        "class": "先锋",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "苏苏洛",
+        "rarity": "3",
+        "class": "医疗",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "苦艾",
+        "rarity": "4",
+        "class": "术师",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "莫斯提马",
+        "rarity": "5",
+        "class": "术师",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "莱恩哈特",
+        "rarity": "4",
+        "class": "术师",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "蓝毒",
+        "rarity": "4",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "薄绿",
+        "rarity": "4",
+        "class": "术师",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "蛇屠箱",
+        "rarity": "3",
+        "class": "重装",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "蜜蜡",
+        "rarity": "4",
+        "class": "术师",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "角峰",
+        "rarity": "3",
+        "class": "重装",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "讯使",
+        "rarity": "3",
+        "class": "先锋",
+        "approach": "信用交易所"
+    },
+    {
+        "cn_name": "诗怀雅",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "调香师",
+        "rarity": "3",
+        "class": "医疗",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "贾维",
+        "rarity": "4",
+        "class": "先锋",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "赫拉格",
+        "rarity": "5",
+        "class": "近卫",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "赫默",
+        "rarity": "4",
+        "class": "医疗",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "远山",
+        "rarity": "3",
+        "class": "术师",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "送葬人",
+        "rarity": "4",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "酸糖",
+        "rarity": "3",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "铃兰",
+        "rarity": "5",
+        "class": "辅助",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "银灰",
+        "rarity": "5",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "铸铁",
+        "rarity": "4",
+        "class": "近卫",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "锡兰",
+        "rarity": "4",
+        "class": "医疗",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "闪灵",
+        "rarity": "5",
+        "class": "医疗",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "阿",
+        "rarity": "5",
+        "class": "特种",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "阿消",
+        "rarity": "3",
+        "class": "特种",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "阿米娅",
+        "rarity": "4",
+        "class": "术师",
+        "approach": "主线剧情"
+    },
+    {
+        "cn_name": "陈",
+        "rarity": "5",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "陨星",
+        "rarity": "4",
+        "class": "狙击",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "雪雉",
+        "rarity": "4",
+        "class": "特种",
+        "approach": "活动获得"
+    },
+    {
+        "cn_name": "雷蛇",
+        "rarity": "4",
+        "class": "重装",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "霜叶",
+        "rarity": "3",
+        "class": "近卫",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "风笛",
+        "rarity": "5",
+        "class": "先锋",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "食铁兽",
+        "rarity": "4",
+        "class": "特种",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "香草",
+        "rarity": "2",
+        "class": "先锋",
+        "approach": "公开招募 标准寻访"
+    },
+    {
+        "cn_name": "麦哲伦",
+        "rarity": "5",
+        "class": "辅助",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "黑",
+        "rarity": "5",
+        "class": "狙击",
+        "approach": "标准寻访"
+    },
+    {
+        "cn_name": "黑角",
+        "rarity": "1",
+        "class": "重装",
+        "approach": "公开招募"
+    }
+]

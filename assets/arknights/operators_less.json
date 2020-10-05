@@ -1,0 +1,1290 @@
+[
+    {
+        "cn_name": "12F",
+        "en_name": "12F",
+        "rarity": 2,
+        "class": "术师",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "Castle-3",
+        "en_name": "Castle-3",
+        "rarity": 1,
+        "class": "近卫",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "Lancet-2",
+        "en_name": "Lancet-2",
+        "rarity": 1,
+        "class": "医疗",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "THRM-EX",
+        "en_name": "Thermal-EX",
+        "rarity": 1,
+        "class": "特种",
+        "approach": "公开招募",
+        "release_time": "20200501"
+    },
+    {
+        "cn_name": "W",
+        "en_name": "W",
+        "rarity": 6,
+        "class": "狙击",
+        "approach": "限定寻访",
+        "release_time": "20200501"
+    },
+    {
+        "cn_name": "临光",
+        "en_name": "Nearl",
+        "rarity": 5,
+        "class": "重装",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "亚叶",
+        "en_name": "Folinic",
+        "rarity": 5,
+        "class": "医疗",
+        "approach": "活动获得",
+        "release_time": "20200709"
+    },
+    {
+        "cn_name": "伊桑",
+        "en_name": "Ethan",
+        "rarity": 4,
+        "class": "特种",
+        "approach": "凭证交易所",
+        "release_time": "20191101"
+    },
+    {
+        "cn_name": "伊芙利特",
+        "en_name": "Ifrit",
+        "rarity": 6,
+        "class": "术师",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "傀影",
+        "en_name": "Phantom",
+        "rarity": 6,
+        "class": "特种",
+        "approach": "标准寻访",
+        "release_time": "20200421"
+    },
+    {
+        "cn_name": "克洛丝",
+        "en_name": "Kroos",
+        "rarity": 3,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "凛冬",
+        "en_name": "Зима",
+        "rarity": 5,
+        "class": "先锋",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "初雪",
+        "en_name": "Pramanix",
+        "rarity": 5,
+        "class": "辅助",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "刻俄柏",
+        "en_name": "Ceobe",
+        "rarity": 6,
+        "class": "术师",
+        "approach": "标准寻访",
+        "release_time": "20200225"
+    },
+    {
+        "cn_name": "刻刀",
+        "en_name": "Cutter",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20200421"
+    },
+    {
+        "cn_name": "华法琳",
+        "en_name": "Warfarin",
+        "rarity": 5,
+        "class": "医疗",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "卡缇",
+        "en_name": "Cardigan",
+        "rarity": 3,
+        "class": "重装",
+        "approach": "标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "卡达",
+        "en_name": "Click",
+        "rarity": 4,
+        "class": "术师",
+        "approach": "标准寻访",
+        "release_time": "20200709"
+    },
+    {
+        "cn_name": "古米",
+        "en_name": "Гум",
+        "rarity": 4,
+        "class": "重装",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "可颂",
+        "en_name": "Croissant",
+        "rarity": 5,
+        "class": "重装",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "史尔特尔",
+        "en_name": "Surtr",
+        "rarity": 6,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20200924"
+    },
+    {
+        "cn_name": "史都华德",
+        "en_name": "Steward",
+        "rarity": 3,
+        "class": "术师",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "吽",
+        "en_name": "Hung",
+        "rarity": 5,
+        "class": "重装",
+        "approach": "标准寻访",
+        "release_time": "20200116"
+    },
+    {
+        "cn_name": "嘉维尔",
+        "en_name": "Gavial",
+        "rarity": 4,
+        "class": "医疗",
+        "approach": "信用交易所",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "四月",
+        "en_name": "April",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20200924"
+    },
+    {
+        "cn_name": "因陀罗",
+        "en_name": "Indra",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "地灵",
+        "en_name": "Earthspirit",
+        "rarity": 4,
+        "class": "辅助",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "坚雷",
+        "en_name": "Dur-nar",
+        "rarity": 4,
+        "class": "重装",
+        "approach": "信用交易所",
+        "release_time": "20191001"
+    },
+    {
+        "cn_name": "塞雷娅",
+        "en_name": "Saria",
+        "rarity": 6,
+        "class": "重装",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "夜刀",
+        "en_name": "Yato",
+        "rarity": 2,
+        "class": "先锋",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "夜烟",
+        "en_name": "Haze",
+        "rarity": 4,
+        "class": "术师",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "夜莺",
+        "en_name": "Nightingale",
+        "rarity": 6,
+        "class": "医疗",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "夜魔",
+        "en_name": "Nightmare",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190530"
+    },
+    {
+        "cn_name": "天火",
+        "en_name": "Skyfire",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "孑",
+        "en_name": "Jaye",
+        "rarity": 4,
+        "class": "特种",
+        "approach": "标准寻访",
+        "release_time": "20200811"
+    },
+    {
+        "cn_name": "守林人",
+        "en_name": "Firewatch",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "安哲拉",
+        "en_name": "Andreana",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20200811"
+    },
+    {
+        "cn_name": "安德切尔",
+        "en_name": "Adnachiel",
+        "rarity": 3,
+        "class": "狙击",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "安比尔",
+        "en_name": "Ambriel",
+        "rarity": 4,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20191224"
+    },
+    {
+        "cn_name": "安洁莉娜",
+        "en_name": "Angelina",
+        "rarity": 6,
+        "class": "辅助",
+        "approach": "标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "安赛尔",
+        "en_name": "Ansel",
+        "rarity": 3,
+        "class": "医疗",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "宴",
+        "en_name": "Utage",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20200317"
+    },
+    {
+        "cn_name": "崖心",
+        "en_name": "Cliffheart",
+        "rarity": 5,
+        "class": "特种",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "巡林者",
+        "en_name": "Rangers",
+        "rarity": 2,
+        "class": "狙击",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "巫恋",
+        "en_name": "Shamare",
+        "rarity": 5,
+        "class": "辅助",
+        "approach": "标准寻访",
+        "release_time": "20200421"
+    },
+    {
+        "cn_name": "布洛卡",
+        "en_name": "Broca",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20191210"
+    },
+    {
+        "cn_name": "年",
+        "en_name": "Nian",
+        "rarity": 6,
+        "class": "重装",
+        "approach": "限定寻访",
+        "release_time": "20200116"
+    },
+    {
+        "cn_name": "幽灵鲨",
+        "en_name": "Specter",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "微风",
+        "en_name": "Breeze",
+        "rarity": 5,
+        "class": "医疗",
+        "approach": "凭证交易所",
+        "release_time": "20191101"
+    },
+    {
+        "cn_name": "德克萨斯",
+        "en_name": "Texas",
+        "rarity": 5,
+        "class": "先锋",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "惊蛰",
+        "en_name": "Leizi",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "标准寻访",
+        "release_time": "20200225"
+    },
+    {
+        "cn_name": "慑砂",
+        "en_name": "Sesa",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20200317"
+    },
+    {
+        "cn_name": "慕斯",
+        "en_name": "Mousse",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "拉普兰德",
+        "en_name": "Lappland",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "拜松",
+        "en_name": "Bison",
+        "rarity": 5,
+        "class": "重装",
+        "approach": "活动获得",
+        "release_time": "20191119"
+    },
+    {
+        "cn_name": "推进之王",
+        "en_name": "Siege",
+        "rarity": 6,
+        "class": "先锋",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "斑点",
+        "en_name": "Spot",
+        "rarity": 3,
+        "class": "重装",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190709"
+    },
+    {
+        "cn_name": "断崖",
+        "en_name": "Ayerscarpe",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20200709"
+    },
+    {
+        "cn_name": "断罪者",
+        "en_name": "Conviction",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "活动获得",
+        "release_time": "20200401"
+    },
+    {
+        "cn_name": "斯卡蒂",
+        "en_name": "Skadi",
+        "rarity": 6,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190530"
+    },
+    {
+        "cn_name": "早露",
+        "en_name": "Роса",
+        "rarity": 6,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20200618"
+    },
+    {
+        "cn_name": "星极",
+        "en_name": "Astesia",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20190910"
+    },
+    {
+        "cn_name": "星熊",
+        "en_name": "Hoshiguma",
+        "rarity": 6,
+        "class": "重装",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "普罗旺斯",
+        "en_name": "Provence",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "暗索",
+        "en_name": "Rope",
+        "rarity": 4,
+        "class": "特种",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "暴行",
+        "en_name": "Savage",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "预约奖励 周年奖励",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "月禾",
+        "en_name": "Tsukinogi",
+        "rarity": 5,
+        "class": "辅助",
+        "approach": "标准寻访",
+        "release_time": "20200602"
+    },
+    {
+        "cn_name": "月见夜",
+        "en_name": "Midnight",
+        "rarity": 3,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190530"
+    },
+    {
+        "cn_name": "末药",
+        "en_name": "Myrrh",
+        "rarity": 4,
+        "class": "医疗",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "杜宾",
+        "en_name": "Dobermann",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "杜林",
+        "en_name": "Durin",
+        "rarity": 2,
+        "class": "术师",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "杰西卡",
+        "en_name": "Jessica",
+        "rarity": 4,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "极境",
+        "en_name": "Elysium",
+        "rarity": 5,
+        "class": "先锋",
+        "approach": "标准寻访",
+        "release_time": "20200501"
+    },
+    {
+        "cn_name": "柏喙",
+        "en_name": "Bibeak",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "活动获得",
+        "release_time": "20200317"
+    },
+    {
+        "cn_name": "格劳克斯",
+        "en_name": "Glaucus",
+        "rarity": 5,
+        "class": "辅助",
+        "approach": "标准寻访",
+        "release_time": "20190827"
+    },
+    {
+        "cn_name": "格拉尼",
+        "en_name": "Grani",
+        "rarity": 5,
+        "class": "先锋",
+        "approach": "活动获得",
+        "release_time": "20190530"
+    },
+    {
+        "cn_name": "格雷伊",
+        "en_name": "Greyy",
+        "rarity": 4,
+        "class": "术师",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190709"
+    },
+    {
+        "cn_name": "桃金娘",
+        "en_name": "Myrtle",
+        "rarity": 4,
+        "class": "先锋",
+        "approach": "标准寻访",
+        "release_time": "20190910"
+    },
+    {
+        "cn_name": "梅",
+        "en_name": "May",
+        "rarity": 4,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20191119"
+    },
+    {
+        "cn_name": "梅尔",
+        "en_name": "Mayer",
+        "rarity": 5,
+        "class": "辅助",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "梓兰",
+        "en_name": "Orchid",
+        "rarity": 3,
+        "class": "辅助",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "棘刺",
+        "en_name": "Thorns",
+        "rarity": 6,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20200811"
+    },
+    {
+        "cn_name": "森蚺",
+        "en_name": "Eunectes",
+        "rarity": 6,
+        "class": "重装",
+        "approach": "标准寻访",
+        "release_time": "20200825"
+    },
+    {
+        "cn_name": "槐琥",
+        "en_name": "Waai Fu",
+        "rarity": 5,
+        "class": "特种",
+        "approach": "标准寻访",
+        "release_time": "20191119"
+    },
+    {
+        "cn_name": "泡普卡",
+        "en_name": "Popukar",
+        "rarity": 3,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190709"
+    },
+    {
+        "cn_name": "波登可",
+        "en_name": "Podenco",
+        "rarity": 4,
+        "class": "辅助",
+        "approach": "标准寻访",
+        "release_time": "20200618"
+    },
+    {
+        "cn_name": "流星",
+        "en_name": "Meteor",
+        "rarity": 4,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "深海色",
+        "en_name": "Deepcolor",
+        "rarity": 4,
+        "class": "辅助",
+        "approach": "标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "清流",
+        "en_name": "Purestream",
+        "rarity": 4,
+        "class": "医疗",
+        "approach": "限时礼包",
+        "release_time": "20200303"
+    },
+    {
+        "cn_name": "清道夫",
+        "en_name": "Scavenger",
+        "rarity": 4,
+        "class": "先锋",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "温蒂",
+        "en_name": "Weedy",
+        "rarity": 6,
+        "class": "特种",
+        "approach": "标准寻访",
+        "release_time": "20200501"
+    },
+    {
+        "cn_name": "火神",
+        "en_name": "Vulcan",
+        "rarity": 5,
+        "class": "重装",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "灰喉",
+        "en_name": "GreyThroat",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20191224"
+    },
+    {
+        "cn_name": "炎客",
+        "en_name": "Flamebringer",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "活动获得",
+        "release_time": "20191015"
+    },
+    {
+        "cn_name": "炎熔",
+        "en_name": "Lava",
+        "rarity": 3,
+        "class": "术师",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "煌",
+        "en_name": "Blaze",
+        "rarity": 6,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20191224"
+    },
+    {
+        "cn_name": "燧石",
+        "en_name": "Flint",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20200825"
+    },
+    {
+        "cn_name": "特米米",
+        "en_name": "Tomimi",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "活动获得",
+        "release_time": "20200825"
+    },
+    {
+        "cn_name": "狮蝎",
+        "en_name": "Manticore",
+        "rarity": 5,
+        "class": "特种",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "猎蜂",
+        "en_name": "Beehunter",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190530"
+    },
+    {
+        "cn_name": "玫兰莎",
+        "en_name": "Melantha",
+        "rarity": 3,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "白金",
+        "en_name": "Platinum",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "白雪",
+        "en_name": "ShiraYuki",
+        "rarity": 4,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "白面鸮",
+        "en_name": "Ptilopsis",
+        "rarity": 5,
+        "class": "医疗",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "真理",
+        "en_name": "Истина",
+        "rarity": 5,
+        "class": "辅助",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "石棉",
+        "en_name": "Asbestos",
+        "rarity": 5,
+        "class": "重装",
+        "approach": "标准寻访",
+        "release_time": "20200602"
+    },
+    {
+        "cn_name": "砾",
+        "en_name": "Gravel",
+        "rarity": 4,
+        "class": "特种",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "稀音",
+        "en_name": "Scene",
+        "rarity": 5,
+        "class": "辅助",
+        "approach": "活动获得",
+        "release_time": "20200728"
+    },
+    {
+        "cn_name": "空",
+        "en_name": "Sora",
+        "rarity": 5,
+        "class": "辅助",
+        "approach": "标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "空爆",
+        "en_name": "Catapult",
+        "rarity": 3,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190523"
+    },
+    {
+        "cn_name": "米格鲁",
+        "en_name": "Beagle",
+        "rarity": 3,
+        "class": "重装",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "红",
+        "en_name": "Projekt Red",
+        "rarity": 5,
+        "class": "特种",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "红云",
+        "en_name": "Vermeil",
+        "rarity": 4,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20191015"
+    },
+    {
+        "cn_name": "红豆",
+        "en_name": "Vigna",
+        "rarity": 4,
+        "class": "先锋",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "缠丸",
+        "en_name": "Matoimaru",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "翎羽",
+        "en_name": "Plume",
+        "rarity": 3,
+        "class": "先锋",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "能天使",
+        "en_name": "Exusiai",
+        "rarity": 6,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "艾丝黛尔",
+        "en_name": "Estelle",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "艾雅法拉",
+        "en_name": "Eyjafjalla",
+        "rarity": 6,
+        "class": "术师",
+        "approach": "标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "芙兰卡",
+        "en_name": "Franka",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "芙蓉",
+        "en_name": "Hibiscus",
+        "rarity": 3,
+        "class": "医疗",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "芬",
+        "en_name": "Fang",
+        "rarity": 3,
+        "class": "先锋",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "芳汀",
+        "en_name": "Arene",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20200924"
+    },
+    {
+        "cn_name": "苇草",
+        "en_name": "Reed",
+        "rarity": 5,
+        "class": "先锋",
+        "approach": "标准寻访",
+        "release_time": "20191210"
+    },
+    {
+        "cn_name": "苏苏洛",
+        "en_name": "Sussurro",
+        "rarity": 4,
+        "class": "医疗",
+        "approach": "标准寻访",
+        "release_time": "20190827"
+    },
+    {
+        "cn_name": "苦艾",
+        "en_name": "Absinthe",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "活动获得",
+        "release_time": "20200618"
+    },
+    {
+        "cn_name": "莫斯提马",
+        "en_name": "Mostima",
+        "rarity": 6,
+        "class": "术师",
+        "approach": "标准寻访",
+        "release_time": "20191119"
+    },
+    {
+        "cn_name": "莱恩哈特",
+        "en_name": "Leonhardt",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "标准寻访",
+        "release_time": "20200618"
+    },
+    {
+        "cn_name": "蓝毒",
+        "en_name": "Blue Poison",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "薄绿",
+        "en_name": "Mint",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "活动获得",
+        "release_time": "20200924"
+    },
+    {
+        "cn_name": "蛇屠箱",
+        "en_name": "Cuora",
+        "rarity": 4,
+        "class": "重装",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "蜜蜡",
+        "en_name": "Beeswax",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "标准寻访",
+        "release_time": "20200728"
+    },
+    {
+        "cn_name": "角峰",
+        "en_name": "Matterhorn",
+        "rarity": 4,
+        "class": "重装",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "讯使",
+        "en_name": "Courier",
+        "rarity": 4,
+        "class": "先锋",
+        "approach": "信用交易所",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "诗怀雅",
+        "en_name": "Swire",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190709"
+    },
+    {
+        "cn_name": "调香师",
+        "en_name": "Perfumer",
+        "rarity": 4,
+        "class": "医疗",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "贾维",
+        "en_name": "Chiave",
+        "rarity": 5,
+        "class": "先锋",
+        "approach": "标准寻访",
+        "release_time": "20200728"
+    },
+    {
+        "cn_name": "赫拉格",
+        "en_name": "Hellagur",
+        "rarity": 6,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20190910"
+    },
+    {
+        "cn_name": "赫默",
+        "en_name": "Silence",
+        "rarity": 5,
+        "class": "医疗",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "远山",
+        "en_name": "Gitano",
+        "rarity": 4,
+        "class": "术师",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "送葬人",
+        "en_name": "Executor",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20191015"
+    },
+    {
+        "cn_name": "酸糖",
+        "en_name": "Aciddrop",
+        "rarity": 4,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20200825"
+    },
+    {
+        "cn_name": "铃兰",
+        "en_name": "Suzuran",
+        "rarity": 6,
+        "class": "辅助",
+        "approach": "标准寻访",
+        "release_time": "20200709"
+    },
+    {
+        "cn_name": "银灰",
+        "en_name": "SilverAsh",
+        "rarity": 6,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "铸铁",
+        "en_name": "Sideroca",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "活动获得",
+        "release_time": "20200421"
+    },
+    {
+        "cn_name": "锡兰",
+        "en_name": "Ceylon",
+        "rarity": 5,
+        "class": "医疗",
+        "approach": "活动获得",
+        "release_time": "20190827"
+    },
+    {
+        "cn_name": "闪灵",
+        "en_name": "Shining",
+        "rarity": 6,
+        "class": "医疗",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "阿",
+        "en_name": "Aak",
+        "rarity": 6,
+        "class": "特种",
+        "approach": "标准寻访",
+        "release_time": "20200116"
+    },
+    {
+        "cn_name": "阿消",
+        "en_name": "Shaw",
+        "rarity": 4,
+        "class": "特种",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "阿米娅",
+        "en_name": "Amiya",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "主线剧情",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "陈",
+        "en_name": "Ch'en",
+        "rarity": 6,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190709"
+    },
+    {
+        "cn_name": "陨星",
+        "en_name": "Meteorite",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "雪雉",
+        "en_name": "Snowsant",
+        "rarity": 5,
+        "class": "特种",
+        "approach": "活动获得",
+        "release_time": "20200109"
+    },
+    {
+        "cn_name": "雷蛇",
+        "en_name": "Liskarm",
+        "rarity": 5,
+        "class": "重装",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "霜叶",
+        "en_name": "Frostleaf",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "风笛",
+        "en_name": "Bagpipe",
+        "rarity": 6,
+        "class": "先锋",
+        "approach": "标准寻访",
+        "release_time": "20200317"
+    },
+    {
+        "cn_name": "食铁兽",
+        "en_name": "FEater",
+        "rarity": 5,
+        "class": "特种",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "香草",
+        "en_name": "Vanilla",
+        "rarity": 3,
+        "class": "先锋",
+        "approach": "公开招募 标准寻访",
+        "release_time": "20190430"
+    },
+    {
+        "cn_name": "麦哲伦",
+        "en_name": "Magallan",
+        "rarity": 6,
+        "class": "辅助",
+        "approach": "标准寻访",
+        "release_time": "20191015"
+    },
+    {
+        "cn_name": "黑",
+        "en_name": "Schwarz",
+        "rarity": 6,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20190827"
+    },
+    {
+        "cn_name": "黑角",
+        "en_name": "Noir Corne",
+        "rarity": 2,
+        "class": "重装",
+        "approach": "公开招募",
+        "release_time": "20190430"
+    }
+]

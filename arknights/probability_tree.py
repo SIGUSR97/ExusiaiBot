@@ -21,8 +21,8 @@ class ProbabilityNode:
         children: List[ProbabilityNode] = None,
     ) -> None:
         self._probability = self._initial_probability = probability
-        if isinstance(self.probability, (float, int)):
-            self._probability = Decimal(f"{probability:.{self.ROUND_TO}f}")
+        if isinstance(self._probability, (float, int)):
+            self._probability = self._decimalize(self._probability)
         self.name = name
         self.value = value
         if not children:
@@ -33,7 +33,6 @@ class ProbabilityNode:
 
     def choice(self) -> ProbabilityNode:
         if not self.children:
-            print("no children")
             return self
         return self.rng.choice(
             self.children,
@@ -42,7 +41,6 @@ class ProbabilityNode:
 
     def choice_recursive(self) -> ProbabilityNode:
         result = self.choice()
-        print("result.children: ", result.__dict__)
         if result.children:
             return result.choice_recursive()
         else:
@@ -58,7 +56,12 @@ class ProbabilityNode:
             if child.name
         }.get(name) # yapf: disable
 
-    def add_child(self, child: ProbabilityNode) -> None:
+    def add_child(
+        self,
+        child: Optional[ProbabilityNode] = None,
+        **kwargs,
+    ) -> None:
+        if not child: child = ProbabilityNode(**kwargs)
         self.children.append(child)
         child.parent = self
 
@@ -71,7 +74,7 @@ class ProbabilityNode:
                 child._probability = prob
         if isinstance(probabilities, dict):
             for k, v in probabilities.items():
-                self.get_child_by_name(k)._probability = v
+                self.get_child_by_name(k)._probability = self._decimalize(v)
 
     def reset_children(self) -> None:
         for child in self.children:
@@ -90,9 +93,9 @@ class ProbabilityNode:
     @probability.setter
     def probability(self, value: Number) -> None:
         if value > 1:
-            raise ValueError # TODO: Add error detail
+            raise ValueError  # TODO: Add error detail
         if isinstance(value, (int, float)):
-            value = Decimal(f"{value:.{self.ROUND_TO}f}")
+            value = self._decimalize(value)
         diff = value - self._probability
         siblings = self._get_siblings()
         for sibling in siblings:
@@ -105,6 +108,10 @@ class ProbabilityNode:
 
     def _reset(self) -> None:
         self._probability = self._initial_probability
+
+    def _decimalize(self, num: Number) -> Decimal:
+        if isinstance(num, Decimal): return num
+        return Decimal(f"{num:.{self.ROUND_TO}f}")
 
     def __repr__(self) -> str:
         return f"<ProbabilityNode {self.name}: {self.probability}>"
