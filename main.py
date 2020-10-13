@@ -64,7 +64,7 @@ def dot_jrrp_handler(
     rp = default_rng(SeedSequence(hash_)).integers(0, 100, endpoint=True)
     chat_id = update.effective_chat.id
     msg = f"@{username} 今天的人品值是：**{rp}**。"
-    context.bot.send_messzage(chat_id, text=msg, parse_mode=ParseMode.MARKDOWN)
+    context.bot.send_message(chat_id, text=msg, parse_mode=ParseMode.MARKDOWN)
 
 
 dispatcher.add_handler(CommandHandler('start', start))

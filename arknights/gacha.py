@@ -8,9 +8,9 @@ from random import choice
 
 import arrow
 
-from .probability_tree import ProbabilityNode
-from .utils import (get_banners_info, get_operators_info, save_banners_info,
-                   save_operators_info)
+from probability_tree import ProbabilityNode
+from utils import (get_banners_info, get_operators_info, save_banners_info,
+                    save_operators_info)
 
 
 class GachaBanner(ABC):
@@ -52,42 +52,6 @@ class ArknightsBanner(GachaBanner):
         self.rateups = rateups
 
         self._load_banner(False)
-        self._load_rateups(self.banner["rateups"])
-
-        self.N_STARS_POOL = {
-            i: list(
-                filter(partial(self._filter, rarity=i),
-                       self.available_operators))
-            for i in range(3, 7)
-        }
-        self.N_STARS_RATE = {
-            3: self.THREE_STAR_RATE,
-            4: self.FOUR_STAR_RATE,
-            5: self.FIVE_STAR_RATE,
-            6: self.SIX_STAR_RATE,
-        }
-
-        self.rng = ProbabilityNode()
-
-        for i in range(3, 7):
-            self.rng.add_child(
-                name=f"{self.NUM2WORD[i]}_STAR",
-                probability=self.N_STARS_RATE[i],
-                value=self.N_STARS_POOL[i],
-            )
-
-        for k, v in self.rateups.items():
-            parent_name = f"{self.NUM2WORD[k]}_STAR"
-            self.rng.get_child_by_name(parent_name).add_child(
-                name=f"RATEUP_{self.NUM2WORD[k]}_STAR",
-                probability=self.RATEUP,
-                value=v,
-            )
-            self.rng.get_child_by_name(parent_name).add_child(
-                name=f"{self.NUM2WORD[k]}_STAR",
-                probability=1 - self.RATEUP,
-                value=self.N_STARS_POOL[k],
-            )
 
     def pull(self) -> Any:
         return choice(self.rng.choice_recursive().value)
@@ -126,16 +90,23 @@ class ArknightsBanner(GachaBanner):
         with path.open("r", encoding="utf-8") as f:
             self.banners = json.loads(f.read())
 
+        self.set_banner(self.name)
+
+    def set_banner(self, banner_name: str) -> None:
         self.banner = None
         for banner in self.banners:
-            if banner["name"] == self.name:
+            if banner["name"] == banner_name:
                 self.banner = banner
 
         if not self.banner:
             self.banner = {
-                "name": self.name,
-                "time": self.end_time if self.end_time else arrow.get().format("YYYYMMDD"),
-                "rateups": self.rateups,
+                "name":
+                self.name,
+                "time":
+                self.end_time
+                if self.end_time else arrow.get().format("YYYYMMDD"),
+                "rateups":
+                self.rateups,
             }
 
         filter_ = partial(
@@ -151,6 +122,9 @@ class ArknightsBanner(GachaBanner):
             for op in self.available_operators
         }
 
+        self._load_rateups(self.banner["rateups"])
+        self._load_probability_tree()
+
     def _load_rateups(self, rateups: list) -> None:
         self.rateups = defaultdict(list)
         for name in rateups:
@@ -159,7 +133,43 @@ class ArknightsBanner(GachaBanner):
                     self.available_operators_dict[name])
                 del self.available_operators_dict[name]
             op = self.operators_dict[name]
-            self.rateups[op["rarity"]].append(op)        
+            self.rateups[op["rarity"]].append(op)
+
+    def _load_probability_tree(self) -> None:
+        self.N_STARS_POOL = {
+            i: list(
+                filter(partial(self._filter, rarity=i),
+                       self.available_operators))
+            for i in range(3, 7)
+        }
+        self.N_STARS_RATE = {
+            3: self.THREE_STAR_RATE,
+            4: self.FOUR_STAR_RATE,
+            5: self.FIVE_STAR_RATE,
+            6: self.SIX_STAR_RATE,
+        }
+
+        self.rng = ProbabilityNode()
+
+        for i in range(3, 7):
+            self.rng.add_child(
+                name=f"{self.NUM2WORD[i]}_STAR",
+                probability=self.N_STARS_RATE[i],
+                value=self.N_STARS_POOL[i],
+            )
+
+        for k, v in self.rateups.items():
+            parent_name = f"{self.NUM2WORD[k]}_STAR"
+            self.rng.get_child_by_name(parent_name).add_child(
+                name=f"RATEUP_{self.NUM2WORD[k]}_STAR",
+                probability=self.RATEUP,
+                value=v,
+            )
+            self.rng.get_child_by_name(parent_name).add_child(
+                name=f"{self.NUM2WORD[k]}_STAR",
+                probability=1 - self.RATEUP,
+                value=self.N_STARS_POOL[k],
+            )
 
     def _filter(
         self,
@@ -182,6 +192,10 @@ if __name__ == "__main__":
     from pprint import pprint
     banner = ArknightsBanner("test")
     pprint(banner.pull10(True))
+    banner.set_banner("地生五金")
+    pprint(banner.banner)
+    pprint(banner.pull10(True))
+
     # for i in range(10):
     #     print(banner.pull())
     # banner._load_operator_pool(True)
