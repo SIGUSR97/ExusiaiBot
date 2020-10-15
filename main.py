@@ -80,6 +80,7 @@ dot_dispatcher.add_command("博饼", bobing)
 dot_dispatcher.set_filter(dot_command_filter)
 
 dot_dispatcher.add_command(["十连寻访", "十连"], pull10)
+dot_dispatcher.add_command("设置卡池", set_banner)
 
 updater.start_webhook(
     listen="0.0.0.0",
