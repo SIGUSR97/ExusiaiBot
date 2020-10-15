@@ -56,7 +56,7 @@ def pity_on(
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="已开启保底",
                              parse_mode=ParseMode.HTML)
-def pity_on(
+def pity_off(
     update: Update,
     context: CallbackContext,
     argv: Tuple[str],
