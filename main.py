@@ -2,19 +2,21 @@ import hashlib
 import logging
 import os
 import sys
+from functools import (chat_id=update.effective_chat.id,
+                       parse_mode=ParseMode.HTML,
+                       partialcontext.bot.send_message, text=msg)
 from typing import Tuple
-from functools import partial
 
 import arrow
 from numpy.random import SeedSequence, default_rng
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, Updater
 
-from exusiai_bot.dice_commands import (dice_handler, dot_command_filter,
-                                       dot_rd_handler, bobing)
+from exusiai_bot.dice_commands import (bobing, dice_handler,
+                                       dot_command_filter, dot_rd_handler)
 from exusiai_bot.dot_command import DotCommandDispatcher
+from exusiai_bot.gacha_commands import pity_off, pity_on, pull10, set_banner
 from exusiai_bot.telegram_bot_utils import send_timed_message
-from exusiai_bot.gacha_commands import pull10, set_banner, set_pity
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -81,6 +83,9 @@ dot_dispatcher.set_filter(dot_command_filter)
 
 dot_dispatcher.add_command(["十连寻访", "十连"], pull10)
 dot_dispatcher.add_command("设置卡池", set_banner)
+dot_dispatcher.add_command("开启保底", pity_on)
+dot_dispatcher.add_command("关闭保底", pity_off)
+
 
 updater.start_webhook(
     listen="0.0.0.0",

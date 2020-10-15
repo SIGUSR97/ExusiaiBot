@@ -8,7 +8,7 @@ from telegram.ext import CallbackContext
 from arknights.gacha import ArknightsBanner
 
 banner = ArknightsBanner("default")
-with_pity = False
+with_pity = True
 
 
 def format_gacha_result(pulls: list) -> str:
@@ -43,6 +43,25 @@ def set_banner(
                              parse_mode=ParseMode.HTML)
 
 
-def set_pity(val: bool) -> None:
+def set_pity(val: bool, *args) -> None:
     global with_pity
     with_pity = val
+
+def pity_on(
+    update: Update,
+    context: CallbackContext,
+    argv: Tuple[str],
+) -> None:
+    set_pity(True)
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text="已开启保底",
+                             parse_mode=ParseMode.HTML)
+def pity_on(
+    update: Update,
+    context: CallbackContext,
+    argv: Tuple[str],
+) -> None:
+    set_pity(False)
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text="已关闭保底",
+                             parse_mode=ParseMode.HTML)
