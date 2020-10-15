@@ -8,8 +8,8 @@ from random import choice
 
 import arrow
 
-from probability_tree import ProbabilityNode
-from utils import (get_banners_info, get_operators_info, save_banners_info,
+from .probability_tree import ProbabilityNode
+from .utils import (get_banners_info, get_operators_info, save_banners_info,
                    save_operators_info)
 
 
