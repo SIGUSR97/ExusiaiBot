@@ -2,9 +2,6 @@ import hashlib
 import logging
 import os
 import sys
-from functools import (chat_id=update.effective_chat.id,
-                       parse_mode=ParseMode.HTML,
-                       partialcontext.bot.send_message, text=msg)
 from typing import Tuple
 
 import arrow
@@ -12,11 +9,11 @@ from numpy.random import SeedSequence, default_rng
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, Updater
 
-from exusiai_bot.dice_commands import (bobing, dice_handler,
-                                       dot_command_filter, dot_rd_handler)
+from exusiai_bot.dice_commands import (dice_handler, dot_command_filter,
+                                       dot_rd_handler, bobing)
 from exusiai_bot.dot_command import DotCommandDispatcher
-from exusiai_bot.gacha_commands import pity_off, pity_on, pull10, set_banner
 from exusiai_bot.telegram_bot_utils import send_timed_message
+from exusiai_bot.gacha_commands import pull10, set_banner, pity_on, pity_off
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
