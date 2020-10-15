@@ -13,7 +13,7 @@ with_pity = True
 
 def format_gacha_result(pulls: list) -> str:
     return "\n".join(
-        f"{'⭐' * pull['rarity']} {pull['class']} {pull['cn_name']}"
+        f"{'★' * pull['rarity']} {pull['class']} {pull['cn_name']}"
         for pull in pulls)
 
 
