@@ -9,11 +9,12 @@ from arknights.gacha import ArknightsBanner
 
 banner = ArknightsBanner("default")
 with_pity = True
+stars = ["", "☆", "☆", "☆", "☆", "★", "<b>★</b>"]
 
 
 def format_gacha_result(pulls: list) -> str:
     return "\n".join(
-        f"{'★' * pull['rarity']} {pull['class']} {pull['cn_name']}"
+        f"{ stars[pull['rarity']] * pull['rarity']} {pull['class']} {pull['cn_name']}"
         for pull in pulls)
 
 
@@ -47,6 +48,7 @@ def set_pity(val: bool, *args) -> None:
     global with_pity
     with_pity = val
 
+
 def pity_on(
     update: Update,
     context: CallbackContext,
@@ -56,6 +58,8 @@ def pity_on(
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="已开启保底",
                              parse_mode=ParseMode.HTML)
+
+
 def pity_off(
     update: Update,
     context: CallbackContext,
