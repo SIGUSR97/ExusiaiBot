@@ -3,6 +3,7 @@ import logging
 import os
 import sys
 from typing import Tuple
+from functools import partial
 
 import arrow
 from numpy.random import SeedSequence, default_rng
@@ -13,6 +14,7 @@ from exusiai_bot.dice_commands import (dice_handler, dot_command_filter,
                                        dot_rd_handler, bobing)
 from exusiai_bot.dot_command import DotCommandDispatcher
 from exusiai_bot.telegram_bot_utils import send_timed_message
+from exusiai_bot.gacha_commands import pull10, set_banner, set_pity
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -58,7 +60,7 @@ def dot_jrrp_handler(
     argv: Tuple[str],
 ) -> None:
     username = update.effective_user.username
-    temp =  f"{username}{arrow.utcnow().to('utf-8').isocalendar()}"
+    temp = f"{username}{arrow.utcnow().to('utf-8').isocalendar()}"
     hash_ = int(hashlib.md5(temp.encode()).hexdigest(), 16) % sys.maxsize
     logging.info(f"in jrrp_handler: {temp=}, {hash_=}")
     rp = default_rng(SeedSequence(hash_)).integers(0, 100, endpoint=True)
@@ -76,6 +78,8 @@ dot_dispatcher.add_command("r", dice_handler)
 dot_dispatcher.add_command("rd", dot_rd_handler)
 dot_dispatcher.add_command("博饼", bobing)
 dot_dispatcher.set_filter(dot_command_filter)
+
+dot_dispatcher.add_command(["十连寻访", "十连"], pull10)
 
 updater.start_webhook(
     listen="0.0.0.0",

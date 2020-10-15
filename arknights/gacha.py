@@ -10,7 +10,11 @@ import arrow
 
 from probability_tree import ProbabilityNode
 from utils import (get_banners_info, get_operators_info, save_banners_info,
-                    save_operators_info)
+                   save_operators_info)
+
+
+class NoneExistantBanner(Exception):
+    pass
 
 
 class GachaBanner(ABC):
@@ -92,23 +96,38 @@ class ArknightsBanner(GachaBanner):
 
         self.set_banner(self.name)
 
-    def set_banner(self, banner_name: str) -> None:
-        self.banner = None
+    def set_banner(self, banner_name: str, default: bool = True) -> None:
+        banner_ = None
+        ret = 0
         for banner in self.banners:
             if banner["name"] == banner_name:
-                self.banner = banner
+                banner_ = banner
 
-        if not self.banner:
-            self.banner = {
-                "name":
-                self.name,
-                "time":
-                self.end_time
-                if self.end_time else arrow.get().format("YYYYMMDD"),
-                "rateups":
-                self.rateups,
-            }
+        if not banner_:
+            if default:
+                banner_ = {
+                    "name":
+                    self.name,
+                    "time":
+                    self.end_time
+                    if self.end_time else arrow.get().format("YYYYMMDD"),
+                    "rateups":
+                    self.rateups,
+                }
+            else:
+                raise NoneExistantBanner
+            ret = -1
 
+        self.banner = banner_
+
+        self._load_available_operators()
+
+        self._load_rateups(self.banner["rateups"])
+        self._load_probability_tree()
+
+        return ret
+
+    def _load_available_operators(self) -> None:
         filter_ = partial(
             self._filter,
             rarity=">0",
@@ -121,9 +140,6 @@ class ArknightsBanner(GachaBanner):
             op["cn_name"]: op
             for op in self.available_operators
         }
-
-        self._load_rateups(self.banner["rateups"])
-        self._load_probability_tree()
 
     def _load_rateups(self, rateups: list) -> None:
         self.rateups = defaultdict(list)
@@ -188,6 +204,12 @@ class ArknightsBanner(GachaBanner):
             before_date) >= arrow.get(op["release_time"])
 
 
+def format_gacha_result(pulls: list) -> str:
+    return "\n".join(
+        f"{'⭐' * pull['rarity']} {pull['class']} {pull['cn_name']}"
+        for pull in pulls)
+
+
 if __name__ == "__main__":
     from pprint import pprint
     banner = ArknightsBanner("test")
@@ -195,6 +217,7 @@ if __name__ == "__main__":
     banner.set_banner("地生五金")
     pprint(banner.banner)
     pprint(banner.pull10(True))
+    print(format_gacha_result(banner.pull10(True)))
 
     # for i in range(10):
     #     print(banner.pull())
