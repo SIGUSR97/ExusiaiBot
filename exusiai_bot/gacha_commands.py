@@ -7,7 +7,7 @@ from telegram.ext import CallbackContext
 
 from arknights.gacha import ArknightsBanner
 
-banner = ArknightsBanner()
+banner = ArknightsBanner("default")
 with_pity = False
 
 
