@@ -13,7 +13,7 @@ from exusiai_bot.dice_commands import (dice_handler, dot_command_filter,
                                        dot_rd_handler, bobing)
 from exusiai_bot.dot_command import DotCommandDispatcher
 from exusiai_bot.telegram_bot_utils import send_timed_message
-from exusiai_bot.gacha_commands import pull10, set_banner, pity_on, pity_off
+from exusiai_bot.gacha_commands import pull10, set_banner, pity_on, pity_off, show_banners
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -61,7 +61,7 @@ def dot_jrrp_handler(
     username = update.effective_user.username
     temp = f"{username}{arrow.utcnow().to('utf-8').isocalendar()}"
     hash_ = int(hashlib.md5(temp.encode()).hexdigest(), 16) % sys.maxsize
-    logging.info(f"in jrrp_handler: {temp=}, {hash_=}")
+    # logging.info(f"in jrrp_handler: {temp=}, {hash_=}")
     rp = default_rng(SeedSequence(hash_)).integers(0, 100, endpoint=True)
     chat_id = update.effective_chat.id
     msg = f"@{username} 今天的人品值是：**{rp}**。"
@@ -82,7 +82,7 @@ dot_dispatcher.add_command(["十连寻访", "十连"], pull10)
 dot_dispatcher.add_command("设置卡池", set_banner)
 dot_dispatcher.add_command("开启保底", pity_on)
 dot_dispatcher.add_command("关闭保底", pity_off)
-
+dot_dispatcher.add_command("卡池列表", show_banners)
 
 updater.start_webhook(
     listen="0.0.0.0",

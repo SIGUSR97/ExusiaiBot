@@ -69,3 +69,14 @@ def pity_off(
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="已关闭保底",
                              parse_mode=ParseMode.HTML)
+
+
+def show_banners(
+    update: Update,
+    context: CallbackContext,
+    argv: Tuple[str],
+) -> None:
+    msg = "<b>可选卡池列表</b>" + "\n".join(b.name for b in banner.banner)
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text="已关闭保底",
+                             parse_mode=ParseMode.HTML)
