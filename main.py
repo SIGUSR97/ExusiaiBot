@@ -13,7 +13,7 @@ from exusiai_bot.dice_commands import (dice_handler, dot_command_filter,
                                        dot_rd_handler, bobing)
 from exusiai_bot.dot_command import DotCommandDispatcher
 from exusiai_bot.telegram_bot_utils import send_timed_message
-from exusiai_bot.gacha_commands import pull10, set_banner, pity_on, pity_off, show_banners
+from exusiai_bot.gacha_commands import pull10, set_banner, pity_on, pity_off, show_banners, update_banner
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
@@ -83,6 +83,7 @@ dot_dispatcher.add_command("设置卡池", set_banner)
 dot_dispatcher.add_command("开启保底", pity_on)
 dot_dispatcher.add_command("关闭保底", pity_off)
 dot_dispatcher.add_command("卡池列表", show_banners)
+dot_dispatcher.add_command("更新卡池", update_banner)
 
 updater.start_webhook(
     listen="0.0.0.0",

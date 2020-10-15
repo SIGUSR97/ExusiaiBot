@@ -76,7 +76,18 @@ def show_banners(
     context: CallbackContext,
     argv: Tuple[str],
 ) -> None:
-    msg = "<b>可选卡池列表</b>" + "\n".join(b["name"] for b in banner.banners)
+    msg = "<b>可选卡池列表: </b>\n" + "\n".join(b["name"] for b in banner.banners)
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text=msg,
                              parse_mode=ParseMode.HTML)
+
+def update_banner(
+    update: Update,
+    context: CallbackContext,
+    argv: Tuple[str],) -> None: 
+    global banner
+    banner = ArknightsBanner(name=banner.name, update=True)
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text="卡池数据已更新",
+                             parse_mode=ParseMode.HTML)
+    
