@@ -5,7 +5,7 @@ from typing import Tuple
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext
 
-from ..arknights.gacha import GachaBanner
+from arknights.gacha import GachaBanner
 
 banner = GachaBanner()
 with_pity = False
