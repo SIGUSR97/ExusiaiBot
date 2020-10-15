@@ -17,17 +17,17 @@ class NoneExistantBanner(Exception):
     pass
 
 
-class GachaBanner(ABC):
-    @abstractmethod
-    def __init__(self) -> None:
-        pass
+# class GachaBanner(ABC):
+#     @abstractmethod
+#     def __init__(self) -> None:
+#         pass
 
-    @abstractmethod
-    def pull(self) -> Any:
-        pass
+#     @abstractmethod
+#     def pull(self) -> Any:
+#         pass
 
 
-class ArknightsBanner(GachaBanner):
+class ArknightsBanner():
     SIX_STAR_RATE = 0.02
     FIVE_STAR_RATE = 0.08
     FOUR_STAR_RATE = 0.50
