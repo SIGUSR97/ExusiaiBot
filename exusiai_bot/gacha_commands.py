@@ -9,7 +9,7 @@ from arknights.gacha import ArknightsBanner
 
 banner = ArknightsBanner("default")
 with_pity = True
-stars = ["", "☆", "☆", "☆", "☆", "★", "<b>★</b>"]
+stars = ["", "☆", "☆", "☆", "☆", "★", "⭐"]
 
 
 def format_gacha_result(pulls: list) -> str:
