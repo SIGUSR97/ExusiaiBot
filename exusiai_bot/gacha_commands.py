@@ -9,11 +9,12 @@ from arknights.gacha import ArknightsBanner
 
 banner = ArknightsBanner("default")
 with_pity = True
+stars = ["", "☆", "☆", "☆", "☆", "★", "⭐"]
 
 
 def format_gacha_result(pulls: list) -> str:
     return "\n".join(
-        f"{'★' * pull['rarity']} {pull['class']} {pull['cn_name']}"
+        f"{ stars[pull['rarity']] * pull['rarity']} {pull['class']} {pull['cn_name']}"
         for pull in pulls)
 
 
@@ -22,7 +23,8 @@ def pull10(
     context: CallbackContext,
     argv: Tuple[str],
 ) -> None:
-    _, args_string = argv
+    _= argv
+    #_, args_string = argv
     pulls = banner.pull10(with_pity)
     username = update.effective_user.username
     msg = f"<b>@{username}</b> 的十连寻访结果: \n{format_gacha_result(pulls)}"
@@ -47,6 +49,7 @@ def set_pity(val: bool, *args) -> None:
     global with_pity
     with_pity = val
 
+
 def pity_on(
     update: Update,
     context: CallbackContext,
@@ -56,6 +59,8 @@ def pity_on(
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="已开启保底",
                              parse_mode=ParseMode.HTML)
+
+
 def pity_off(
     update: Update,
     context: CallbackContext,
@@ -64,4 +69,25 @@ def pity_off(
     set_pity(False)
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="已关闭保底",
+                             parse_mode=ParseMode.HTML)
+
+
+def show_banners(
+    update: Update,
+    context: CallbackContext,
+    argv: Tuple[str],
+) -> None:
+    msg = "<b>可选卡池列表: </b>\n" + "\n".join(b["name"] for b in banner.banners)
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text=msg,
+                             parse_mode=ParseMode.HTML)
+
+def update_banner(
+    update: Update,
+    context: CallbackContext,
+    argv: Tuple[str],) -> None: 
+    global banner
+    banner = ArknightsBanner(name=banner.name, update=True)
+    context.bot.send_message(chat_id=update.effective_chat.id,
+                             text="卡池数据已更新",
                              parse_mode=ParseMode.HTML)

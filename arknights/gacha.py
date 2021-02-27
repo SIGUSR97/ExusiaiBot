@@ -10,7 +10,7 @@ import arrow
 
 from .probability_tree import ProbabilityNode
 from .utils import (get_banners_info, get_operators_info, save_banners_info,
-                   save_operators_info)
+                    save_operators_info)
 
 
 class NoneExistantBanner(Exception):
@@ -50,12 +50,13 @@ class ArknightsBanner(GachaBanner):
         name: str,
         rateups: dict = {},
         end_time: Optional[str] = None,
+        update: bool = False,
     ) -> None:
         self.name = name
         self.end_time = end_time
         self.rateups = rateups
 
-        self._load_banner(False)
+        self._load_banner(update)
 
     def pull(self) -> Any:
         return choice(self.rng.choice_recursive().value)
@@ -85,7 +86,7 @@ class ArknightsBanner(GachaBanner):
     def _load_banner(self, update: bool = False) -> None:
         if update:
             save_operators_info(less=True)
-            save_banners_info
+            save_banners_info()
         path = Path(self.OPERATORS_INFO_FILEPATH)
         with path.open("r", encoding="utf-8") as f:
             self.operators = json.loads(f.read())
@@ -192,9 +193,10 @@ class ArknightsBanner(GachaBanner):
         op: dict,
         rarity: Union[str, int] = ">0",
         approach: str = "标准寻访",
-        before_date: str = "99991230",
+        before_date: Optional[str] = None,
     ) -> bool:
         rarity_condition = None
+        if not before_date: before_date = "99991230"
         try:
             rarity_condition = eval(f"op['rarity']{rarity}")
         except SyntaxError:

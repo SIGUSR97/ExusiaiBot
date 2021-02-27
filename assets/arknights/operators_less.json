@@ -40,12 +40,36 @@
         "release_time": "20200501"
     },
     {
+        "cn_name": "傀影",
+        "en_name": "Phantom",
+        "rarity": 6,
+        "class": "特种",
+        "approach": "标准寻访",
+        "release_time": "20200421"
+    },
+    {
+        "cn_name": "调香师",
+        "en_name": "Perfumer",
+        "rarity": 4,
+        "class": "医疗",
+        "approach": "公开招募, 标准寻访",
+        "release_time": "20190430"
+    },
+    {
         "cn_name": "临光",
         "en_name": "Nearl",
         "rarity": 5,
         "class": "重装",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "乌有",
+        "en_name": "Mr.Nothing",
+        "rarity": 5,
+        "class": "特种",
+        "approach": "标准寻访",
+        "release_time": "20210205"
     },
     {
         "cn_name": "亚叶",
@@ -68,23 +92,15 @@
         "en_name": "Ifrit",
         "rarity": 6,
         "class": "术师",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
-    },
-    {
-        "cn_name": "傀影",
-        "en_name": "Phantom",
-        "rarity": 6,
-        "class": "特种",
-        "approach": "标准寻访",
-        "release_time": "20200421"
     },
     {
         "cn_name": "克洛丝",
         "en_name": "Kroos",
         "rarity": 3,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -92,7 +108,7 @@
         "en_name": "Зима",
         "rarity": 5,
         "class": "先锋",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -100,7 +116,7 @@
         "en_name": "Pramanix",
         "rarity": 5,
         "class": "辅助",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -124,8 +140,16 @@
         "en_name": "Warfarin",
         "rarity": 5,
         "class": "医疗",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "卡夫卡",
+        "en_name": "Kafka",
+        "rarity": 5,
+        "class": "特种",
+        "approach": "标准寻访",
+        "release_time": "20201217"
     },
     {
         "cn_name": "卡缇",
@@ -148,7 +172,7 @@
         "en_name": "Гум",
         "rarity": 4,
         "class": "重装",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -156,7 +180,7 @@
         "en_name": "Croissant",
         "rarity": 5,
         "class": "重装",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -172,7 +196,7 @@
         "en_name": "Steward",
         "rarity": 3,
         "class": "术师",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -208,11 +232,19 @@
         "release_time": "20190430"
     },
     {
+        "cn_name": "图耶",
+        "en_name": "Tuye",
+        "rarity": 5,
+        "class": "医疗",
+        "approach": "活动获得",
+        "release_time": "20210119"
+    },
+    {
         "cn_name": "地灵",
         "en_name": "Earthspirit",
         "rarity": 4,
         "class": "辅助",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -228,8 +260,16 @@
         "en_name": "Saria",
         "rarity": 6,
         "class": "重装",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "夕",
+        "en_name": "Dusk",
+        "rarity": 6,
+        "class": "术师",
+        "approach": "限定寻访",
+        "release_time": "20210205"
     },
     {
         "cn_name": "夜刀",
@@ -244,7 +284,7 @@
         "en_name": "Haze",
         "rarity": 4,
         "class": "术师",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -252,7 +292,7 @@
         "en_name": "Nightingale",
         "rarity": 6,
         "class": "医疗",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -260,7 +300,7 @@
         "en_name": "Nightmare",
         "rarity": 5,
         "class": "术师",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190530"
     },
     {
@@ -270,6 +310,14 @@
         "class": "术师",
         "approach": "标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "奥斯塔",
+        "en_name": "Aosta",
+        "rarity": 5,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20201015"
     },
     {
         "cn_name": "孑",
@@ -284,7 +332,7 @@
         "en_name": "Firewatch",
         "rarity": 5,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -324,7 +372,7 @@
         "en_name": "Ansel",
         "rarity": 3,
         "class": "医疗",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -336,12 +384,28 @@
         "release_time": "20200317"
     },
     {
+        "cn_name": "山",
+        "en_name": "Mountain",
+        "rarity": 6,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20201217"
+    },
+    {
         "cn_name": "崖心",
         "en_name": "Cliffheart",
         "rarity": 5,
         "class": "特种",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "嵯峨",
+        "en_name": "Saga",
+        "rarity": 6,
+        "class": "先锋",
+        "approach": "标准寻访",
+        "release_time": "20210205"
     },
     {
         "cn_name": "巡林者",
@@ -380,7 +444,7 @@
         "en_name": "Specter",
         "rarity": 5,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -396,7 +460,7 @@
         "en_name": "Texas",
         "rarity": 5,
         "class": "先锋",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -420,7 +484,7 @@
         "en_name": "Mousse",
         "rarity": 4,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -444,7 +508,7 @@
         "en_name": "Siege",
         "rarity": 6,
         "class": "先锋",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -452,7 +516,7 @@
         "en_name": "Spot",
         "rarity": 3,
         "class": "重装",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190709"
     },
     {
@@ -476,7 +540,7 @@
         "en_name": "Skadi",
         "rarity": 6,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190530"
     },
     {
@@ -492,7 +556,7 @@
         "en_name": "Astesia",
         "rarity": 5,
         "class": "近卫",
-        "approach": "标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190910"
     },
     {
@@ -500,7 +564,7 @@
         "en_name": "Hoshiguma",
         "rarity": 6,
         "class": "重装",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -508,7 +572,7 @@
         "en_name": "Provence",
         "rarity": 5,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -516,7 +580,7 @@
         "en_name": "Rope",
         "rarity": 4,
         "class": "特种",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -524,7 +588,7 @@
         "en_name": "Savage",
         "rarity": 5,
         "class": "近卫",
-        "approach": "预约奖励 周年奖励",
+        "approach": "预约奖励, 周年奖励",
         "release_time": "20190430"
     },
     {
@@ -540,7 +604,7 @@
         "en_name": "Midnight",
         "rarity": 3,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190530"
     },
     {
@@ -548,7 +612,7 @@
         "en_name": "Myrrh",
         "rarity": 4,
         "class": "医疗",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -556,7 +620,7 @@
         "en_name": "Dobermann",
         "rarity": 4,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -568,12 +632,28 @@
         "release_time": "20190430"
     },
     {
+        "cn_name": "杰克",
+        "en_name": "Jackie",
+        "rarity": 4,
+        "class": "近卫",
+        "approach": "标准寻访",
+        "release_time": "20201101"
+    },
+    {
         "cn_name": "杰西卡",
         "en_name": "Jessica",
         "rarity": 4,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "松果",
+        "en_name": "Pinecone",
+        "rarity": 4,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20201217"
     },
     {
         "cn_name": "极境",
@@ -596,7 +676,7 @@
         "en_name": "Glaucus",
         "rarity": 5,
         "class": "辅助",
-        "approach": "标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190827"
     },
     {
@@ -612,7 +692,7 @@
         "en_name": "Greyy",
         "rarity": 4,
         "class": "术师",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190709"
     },
     {
@@ -620,7 +700,7 @@
         "en_name": "Myrtle",
         "rarity": 4,
         "class": "先锋",
-        "approach": "标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190910"
     },
     {
@@ -636,7 +716,7 @@
         "en_name": "Mayer",
         "rarity": 5,
         "class": "辅助",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -644,7 +724,7 @@
         "en_name": "Orchid",
         "rarity": 3,
         "class": "辅助",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -676,8 +756,16 @@
         "en_name": "Popukar",
         "rarity": 3,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190709"
+    },
+    {
+        "cn_name": "泡泡",
+        "en_name": "Bubble",
+        "rarity": 4,
+        "class": "重装",
+        "approach": "标准寻访",
+        "release_time": "20201015"
     },
     {
         "cn_name": "波登可",
@@ -688,11 +776,19 @@
         "release_time": "20200618"
     },
     {
+        "cn_name": "泥岩",
+        "en_name": "Mudrock",
+        "rarity": 6,
+        "class": "重装",
+        "approach": "标准寻访",
+        "release_time": "20201101"
+    },
+    {
         "cn_name": "流星",
         "en_name": "Meteor",
         "rarity": 4,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -716,7 +812,7 @@
         "en_name": "Scavenger",
         "rarity": 4,
         "class": "先锋",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -756,8 +852,16 @@
         "en_name": "Lava",
         "rarity": 3,
         "class": "术师",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "炎狱炎熔",
+        "en_name": "Purgatory",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "活动获得",
+        "release_time": "20210205"
     },
     {
         "cn_name": "煌",
@@ -776,6 +880,14 @@
         "release_time": "20200825"
     },
     {
+        "cn_name": "爱丽丝",
+        "en_name": "Iris",
+        "rarity": 5,
+        "class": "术师",
+        "approach": "标准寻访",
+        "release_time": "20210105"
+    },
+    {
         "cn_name": "特米米",
         "en_name": "Tomimi",
         "rarity": 5,
@@ -788,7 +900,7 @@
         "en_name": "Manticore",
         "rarity": 5,
         "class": "特种",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -796,7 +908,7 @@
         "en_name": "Beehunter",
         "rarity": 4,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190530"
     },
     {
@@ -804,15 +916,23 @@
         "en_name": "Melantha",
         "rarity": 3,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "瑕光",
+        "en_name": "Blemishine",
+        "rarity": 6,
+        "class": "重装",
+        "approach": "标准寻访",
+        "release_time": "20201015"
     },
     {
         "cn_name": "白金",
         "en_name": "Platinum",
         "rarity": 5,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -820,7 +940,7 @@
         "en_name": "ShiraYuki",
         "rarity": 4,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -828,7 +948,7 @@
         "en_name": "Ptilopsis",
         "rarity": 5,
         "class": "医疗",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -836,7 +956,7 @@
         "en_name": "Истина",
         "rarity": 5,
         "class": "辅助",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -852,7 +972,7 @@
         "en_name": "Gravel",
         "rarity": 4,
         "class": "特种",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -872,11 +992,19 @@
         "release_time": "20190430"
     },
     {
+        "cn_name": "空弦",
+        "en_name": "Archetto",
+        "rarity": 6,
+        "class": "狙击",
+        "approach": "标准寻访",
+        "release_time": "20210105"
+    },
+    {
         "cn_name": "空爆",
         "en_name": "Catapult",
         "rarity": 3,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190523"
     },
     {
@@ -884,15 +1012,23 @@
         "en_name": "Beagle",
         "rarity": 3,
         "class": "重装",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "絮雨",
+        "en_name": "Whisperain",
+        "rarity": 5,
+        "class": "医疗",
+        "approach": "标准寻访",
+        "release_time": "20201101"
     },
     {
         "cn_name": "红",
         "en_name": "Projekt Red",
         "rarity": 5,
         "class": "特种",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -900,7 +1036,7 @@
         "en_name": "Vermeil",
         "rarity": 4,
         "class": "狙击",
-        "approach": "标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20191015"
     },
     {
@@ -908,7 +1044,7 @@
         "en_name": "Vigna",
         "rarity": 4,
         "class": "先锋",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -916,15 +1052,23 @@
         "en_name": "Matoimaru",
         "rarity": 4,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "罗宾",
+        "en_name": "Robin",
+        "rarity": 5,
+        "class": "特种",
+        "approach": "活动获得",
+        "release_time": "20201217"
     },
     {
         "cn_name": "翎羽",
         "en_name": "Plume",
         "rarity": 3,
         "class": "先锋",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -932,7 +1076,7 @@
         "en_name": "Exusiai",
         "rarity": 6,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -964,7 +1108,7 @@
         "en_name": "Hibiscus",
         "rarity": 3,
         "class": "医疗",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -972,7 +1116,7 @@
         "en_name": "Fang",
         "rarity": 3,
         "class": "先锋",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -996,7 +1140,7 @@
         "en_name": "Sussurro",
         "rarity": 4,
         "class": "医疗",
-        "approach": "标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190827"
     },
     {
@@ -1028,7 +1172,7 @@
         "en_name": "Blue Poison",
         "rarity": 5,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1044,7 +1188,7 @@
         "en_name": "Cuora",
         "rarity": 4,
         "class": "重装",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1060,7 +1204,7 @@
         "en_name": "Matterhorn",
         "rarity": 4,
         "class": "重装",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1076,16 +1220,16 @@
         "en_name": "Swire",
         "rarity": 5,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190709"
     },
     {
-        "cn_name": "调香师",
-        "en_name": "Perfumer",
+        "cn_name": "豆苗",
+        "en_name": "Beanstalk",
         "rarity": 4,
-        "class": "医疗",
-        "approach": "公开招募 标准寻访",
-        "release_time": "20190430"
+        "class": "先锋",
+        "approach": "标准寻访",
+        "release_time": "20210105"
     },
     {
         "cn_name": "贾维",
@@ -1100,7 +1244,7 @@
         "en_name": "Hellagur",
         "rarity": 6,
         "class": "近卫",
-        "approach": "标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190910"
     },
     {
@@ -1108,7 +1252,7 @@
         "en_name": "Silence",
         "rarity": 5,
         "class": "医疗",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1116,15 +1260,23 @@
         "en_name": "Gitano",
         "rarity": 4,
         "class": "术师",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "迷迭香",
+        "en_name": "Rosmontis",
+        "rarity": 6,
+        "class": "狙击",
+        "approach": "限定寻访",
+        "release_time": "20201101"
     },
     {
         "cn_name": "送葬人",
         "en_name": "Executor",
         "rarity": 5,
         "class": "狙击",
-        "approach": "标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20191015"
     },
     {
@@ -1148,7 +1300,7 @@
         "en_name": "SilverAsh",
         "rarity": 6,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1172,7 +1324,7 @@
         "en_name": "Shining",
         "rarity": 6,
         "class": "医疗",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1188,7 +1340,7 @@
         "en_name": "Shaw",
         "rarity": 4,
         "class": "特种",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1200,11 +1352,19 @@
         "release_time": "20190430"
     },
     {
+        "cn_name": "阿米娅(近卫)",
+        "en_name": "Amiya",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "主线剧情",
+        "release_time": "20201101"
+    },
+    {
         "cn_name": "陈",
         "en_name": "Ch'en",
         "rarity": 6,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190709"
     },
     {
@@ -1212,7 +1372,7 @@
         "en_name": "Meteorite",
         "rarity": 5,
         "class": "狙击",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1228,7 +1388,7 @@
         "en_name": "Liskarm",
         "rarity": 5,
         "class": "重装",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1236,8 +1396,16 @@
         "en_name": "Frostleaf",
         "rarity": 4,
         "class": "近卫",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "鞭刃",
+        "en_name": "Whislash",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "活动获得",
+        "release_time": "20201015"
     },
     {
         "cn_name": "风笛",
@@ -1252,7 +1420,7 @@
         "en_name": "FEater",
         "rarity": 5,
         "class": "特种",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1260,7 +1428,7 @@
         "en_name": "Vanilla",
         "rarity": 3,
         "class": "先锋",
-        "approach": "公开招募 标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
     },
     {
@@ -1268,7 +1436,7 @@
         "en_name": "Magallan",
         "rarity": 6,
         "class": "辅助",
-        "approach": "标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20191015"
     },
     {
@@ -1276,7 +1444,7 @@
         "en_name": "Schwarz",
         "rarity": 6,
         "class": "狙击",
-        "approach": "标准寻访",
+        "approach": "公开招募, 标准寻访",
         "release_time": "20190827"
     },
     {

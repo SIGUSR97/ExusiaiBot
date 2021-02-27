@@ -125,7 +125,7 @@ def get_operators_info(
 
             name = children[0].a["title"]
             time = arrow.get(children[2].string,
-                             "YYYY年M月D日 HH:mm").format("YYYYMMDD")
+                             "YYYY-M-DTHH:mm:ss").format("YYYYMMDD")
             if temp_operators.get(name):
                 temp_operators[name][
                     rename_map["time"] if rename_map else "time"] = time
