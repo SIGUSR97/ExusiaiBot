@@ -23,7 +23,8 @@ def pull10(
     context: CallbackContext,
     argv: Tuple[str],
 ) -> None:
-    _, args_string = argv
+    _= argv
+    #_, args_string = argv
     pulls = banner.pull10(with_pity)
     username = update.effective_user.username
     msg = f"<b>@{username}</b> 的十连寻访结果: \n{format_gacha_result(pulls)}"
@@ -90,4 +91,3 @@ def update_banner(
     context.bot.send_message(chat_id=update.effective_chat.id,
                              text="卡池数据已更新",
                              parse_mode=ParseMode.HTML)
-    
