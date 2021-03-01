@@ -19,9 +19,9 @@ logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO)
 
-TELEGRAM_BOT_TOKEN = os.environ["TELEGRAM_BOT_TOKEN"]
+TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
 PROXY_URL = "http://127.0.0.1:10012"
-PORT = int(os.environ.get('PORT', 5000))
+PORT = int(os.getenv("PORT", 5000))
 
 request_kwargs = {"proxy_url": PROXY_URL}
 
@@ -85,7 +85,7 @@ dot_dispatcher.add_command("关闭保底", pity_off)
 dot_dispatcher.add_command("卡池列表", show_banners)
 dot_dispatcher.add_command("更新卡池", update_banner)
 
-if False:
+if os.getenv("PRODUCTION", 'False').lower() in ['true', '1']:
     updater.start_webhook(
         listen="0.0.0.0",
         port=PORT,
@@ -94,9 +94,9 @@ if False:
     updater.bot.setWebhook(
         f"https://exusiai-bot.herokuapp.com/{TELEGRAM_BOT_TOKEN}")
 
-    updater.idle()
 else:
     updater.start_polling()
 
 logging.info("Exusiai Bot started")
 logging.info("アップルパイ！🥧")
+updater.idle()
