@@ -1,0 +1,9 @@
+{
+  "reportMissingTypeStubs": "none",
+  "reportUnknownMemberType": "none",
+  "reportUnknownArgumentType": "none",
+  "reportUnknownParameterType": "none",
+  "reportUnknownVariableType": "none",
+  "reportUnknownLambdaType": "none",
+  "reportOptionalMemberAccess": "none"
+}
