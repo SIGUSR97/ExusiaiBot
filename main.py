@@ -2,7 +2,7 @@ import hashlib
 import logging
 import os
 import sys
-from typing import Tuple
+from typing import Tuple, cast
 
 import arrow
 from numpy.random import SeedSequence, default_rng
@@ -13,14 +13,16 @@ from exusiai_bot.dice_commands import (dice_handler, dot_command_filter,
                                        dot_rd_handler, bobing)
 from exusiai_bot.dot_command import DotCommandDispatcher
 from exusiai_bot.telegram_bot_utils import send_timed_message
-from exusiai_bot.gacha_commands import pull10, set_banner, pity_on, pity_off, show_banners, update_banner
+from exusiai_bot.gacha_commands import banner_info, pull10, set_banner, pity_on, pity_off, show_banners, update_banner
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO)
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
-PROXY_URL = "http://127.0.0.1:10012"
+if TELEGRAM_BOT_TOKEN is None:
+    raise Exception("Cannot find token in environment variable")
+PROXY_URL = "http://127.0.0.1:7890"
 PORT = int(os.getenv("PORT", 5000))
 
 request_kwargs = {"proxy_url": PROXY_URL}
@@ -28,9 +30,10 @@ request_kwargs = {"proxy_url": PROXY_URL}
 updater = Updater(
     token=TELEGRAM_BOT_TOKEN,
     use_context=True,
-    #request_kwargs=request_kwargs,
+    request_kwargs=request_kwargs,
 )
 dispatcher = updater.dispatcher
+assert dispatcher is not None
 
 
 def start(update: Update, context: CallbackContext):
@@ -49,8 +52,9 @@ def test(update: Update, context: CallbackContext):
 
 
 def error_handler(update: Update, context: CallbackContext):
-    print(f'{context.error=}')
-    raise context.error
+    error = cast(str, context.error)
+    logging.error(f'{error=}')
+    raise Exception(error)
 
 
 def dot_jrrp_handler(
@@ -84,6 +88,7 @@ dot_dispatcher.add_command("开启保底", pity_on)
 dot_dispatcher.add_command("关闭保底", pity_off)
 dot_dispatcher.add_command("卡池列表", show_banners)
 dot_dispatcher.add_command("更新卡池", update_banner)
+dot_dispatcher.add_command("卡池信息", banner_info)
 
 if os.getenv("PRODUCTION", 'False').lower() in ['true', '1']:
     updater.start_webhook(
