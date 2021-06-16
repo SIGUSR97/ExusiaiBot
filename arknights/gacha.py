@@ -48,7 +48,7 @@ class ArknightsBanner(GachaBanner):
     def __init__(
         self,
         name: str,
-        rateups: dict = {},
+        rateups: dict[str, Any] = {},
         end_time: Optional[str] = None,
         update: bool = False,
     ) -> None:
@@ -97,7 +97,7 @@ class ArknightsBanner(GachaBanner):
 
         self.set_banner(self.name)
 
-    def set_banner(self, banner_name: str, default: bool = True) -> None:
+    def set_banner(self, banner_name: str, default: bool = True) -> bool:
         banner_ = None
         ret = 0
         for banner in self.banners:

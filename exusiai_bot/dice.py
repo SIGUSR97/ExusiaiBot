@@ -13,7 +13,7 @@ class DiceCodeSyntaxError(DiceError):
     """Raised when dice code is invalid"""
     def __init__(
         self,
-        dice_code: int,
+        dice_code: str,
         message: str = "Invalid dice code: {}",
     ) -> None:
         self.dice_code = dice_code
@@ -108,7 +108,7 @@ class Dice:
             k: int(v) if v else v
             for k, v in matched.groupdict().items()
         }
-        self._validate_and_set_dice_options(dice_options)
+        self._validate_and_set_dice_options(**dice_options)
 
         throws = self.throws
         sides = self.sides
@@ -135,7 +135,7 @@ class Dice:
     def get_message(
         self,
         formatter: str = default_formatter,
-        formatter_data: dict = {},
+        formatter_data: dict[str, str] = {},
     ) -> str:
         if not self.rolled: raise DiceNotRolledError()
         result = self._get_rolls_string()
@@ -212,16 +212,20 @@ class Dice:
         return f"{result_exp}{sum_part}"
 
     def _validate_and_set_dice_options(
-        self,
-        dice_options: dict,
-    ) -> None:
-        throws = dice_options["throws"]
+            self,
+            # dice_options: dict,
+            *,
+            throws=1,
+            sides,
+            repeats,
+            multiplier,
+            bonus) -> None:
         if not throws: throws = 1
-        sides = dice_options["sides"]
+        # sides = dice_options["sides"]
 
-        repeats = dice_options["repeats"]
-        multiplier = dice_options["multiplier"]
-        bonus = dice_options["bonus"]
+        # repeats = dice_options["repeats"]
+        # multiplier = dice_options["multiplier"]
+        # bonus = dice_options["bonus"]
         if repeats is not None and (repeats <= 0
                                     or repeats > self.max_repeats):
             raise RepeatsValueError(repeats, self.max_repeats)

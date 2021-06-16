@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from decimal import Decimal, getcontext
+from decimal import Decimal
 from typing import Any, List, Optional, Union
 
 from numpy.random import default_rng
@@ -18,7 +18,7 @@ class ProbabilityNode:
         probability: Optional[Number] = None,
         name: str = "",
         value: Any = None,
-        children: List[ProbabilityNode] = None,
+        children: Optional[List[ProbabilityNode]] = None,
     ) -> None:
         self._probability = self._initial_probability = probability
         if isinstance(self._probability, (float, int)):
