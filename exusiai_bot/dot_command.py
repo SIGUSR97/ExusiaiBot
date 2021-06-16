@@ -1,12 +1,13 @@
 import logging
-from typing import Callable, Iterable, Optional, Tuple, Union
+from typing import Any, Callable, Iterable, Optional, Union
 
-from telegram import ParseMode, Update, parsemode
+from telegram import Update
 from telegram.ext import CallbackContext, Dispatcher, Filters, MessageHandler
 
-CommandCallback = Callable[[Update, CallbackContext, Tuple[str]], None]
-FilterReturns = Optional[Tuple[Update, CallbackContext, Tuple[str]]]
-FilterCallback = Callable[[Update, CallbackContext, Tuple[str]], FilterReturns]
+CommandCallback = Callable[[Update, CallbackContext, tuple[str]], None]
+FilterReturns = Optional[tuple[Update, CallbackContext, tuple[str, str, str,
+                                                              str]]]
+FilterCallback = Callable[[Update, CallbackContext, tuple[str]], FilterReturns]
 
 
 class DotCommandError(Exception):
@@ -17,18 +18,19 @@ class DotCommandDispatcher:
     def __init__(
         self,
         dispatcher: Dispatcher,
-        default: CommandCallback = None,
+        default: Optional[CommandCallback] = None,
     ) -> None:
         self._default = default
         self._commands = dict()
 
-        def default(
+        def _default(
             update: Update,
             context: CallbackContext,
-            argv: Tuple[str],
+            argv: tuple[str, str],
         ) -> None:
             command, args_string = argv
-            logging.info(f"received Unknown dot command {command=}, {args_string=}")
+            logging.info(
+                f"received Unknown dot command {command=}, {args_string=}")
             # msg = (f"Unknown dot command: "
             #        f"<b>.{command}</b> <i>{args_string}</i>\n"
             #        "Usage: <b>[.。](command)</b> <i>(arguments)*</i>")
@@ -39,13 +41,15 @@ class DotCommandDispatcher:
             # )
 
         if not self._default:
-            self._default = default
+            self._default = _default
 
         self._filter = None
         self._command_filters = dict()
 
         def dot_command_handler(update: Update, context: CallbackContext):
-            command, args_string = context.matches[0].groups()
+            matches = context.matches
+            assert isinstance(matches, list)
+            command, args_string = matches[0].groups()
             print(f"received dot command: {command} {args_string}")
             filtered = None
             if self._filter:
@@ -64,9 +68,8 @@ class DotCommandDispatcher:
                 print(f"argv: {command=}, {args_string=}")
                 self._default(update, context, argv=(command, args_string))
 
-        self._dot_command_pattern = (
-            r"(?:^[\.。](?P<command>\S+)\s?)"
-            r"(?:(?P<args>.*)\s*)")
+        self._dot_command_pattern = (r"(?:^[\.。](?P<command>\S+)\s?)"
+                                     r"(?:(?P<args>.*)\s*)")
         dispatcher.add_handler(
             MessageHandler(Filters.regex(self._dot_command_pattern),
                            dot_command_handler))
@@ -74,7 +77,7 @@ class DotCommandDispatcher:
     def add_command(
         self,
         name: Union[str, Iterable],
-        command_callback: Callable[[Update, CallbackContext, Tuple[str]],
+        command_callback: Callable[[Update, CallbackContext, tuple[str]],
                                    None],
     ) -> None:
         if isinstance(name, str):

@@ -19,7 +19,7 @@ dice = Dice(
 def dice_handler(
     update: Update,
     context: CallbackContext,
-    argv: Tuple[str],
+    argv: tuple[str, str],
 ) -> None:
     print(f"dice argv: {argv}")
     _, args_string = argv
@@ -51,6 +51,7 @@ def dice_handler(
                                  text=usage_tip,
                                  parse_mode=ParseMode.HTML)
         return
+    assert dice_code is not None
     msg = None
     try:
         dice.roll(dice_code)
@@ -87,7 +88,7 @@ def dice_handler(
 def dot_rd_handler(
     update: Update,
     context: CallbackContext,
-    argv: Tuple[str],
+    argv: Tuple[str, str],
 ) -> None:
     cmd, args_string = argv
     dice_handler(update, context, (cmd, args_string + " 1D100"))
@@ -130,6 +131,7 @@ def get_bobing_result(roll: str):
         return res
     return
 
+
 def bobing(
     update: Update,
     context: CallbackContext,
@@ -142,7 +144,7 @@ def bobing(
     msg = f"<b>@{username}</b> 的博饼结果:"
     if result:
         msg += dice.get_message(f"{{result}}: {result}")
-    else: 
+    else:
         msg += dice.get_message(f"{{result}}: 什么都没有")
 
     context.bot.send_message(chat_id=update.effective_chat.id,
@@ -153,7 +155,7 @@ def bobing(
 def dot_command_filter(
     update: Update,
     context: CallbackContext,
-    argv: Tuple[str],
+    argv: Tuple[str, str],
 ) -> FilterReturns:
     command, args_string = argv
     match = re.match(r"(rd?)(.*)", command)

@@ -488,6 +488,14 @@
         "release_time": "20190430"
     },
     {
+        "cn_name": "战车",
+        "en_name": "Tachanka",
+        "rarity": 5,
+        "class": "近卫",
+        "approach": "活动获得",
+        "release_time": "20210309"
+    },
+    {
         "cn_name": "拉普兰德",
         "en_name": "Lappland",
         "rarity": 5,
@@ -838,6 +846,14 @@
         "class": "狙击",
         "approach": "标准寻访",
         "release_time": "20191224"
+    },
+    {
+        "cn_name": "灰烬",
+        "en_name": "Ash",
+        "rarity": 6,
+        "class": "狙击",
+        "approach": "限定寻访",
+        "release_time": "20210309"
     },
     {
         "cn_name": "炎客",
@@ -1320,6 +1336,14 @@
         "release_time": "20190827"
     },
     {
+        "cn_name": "闪击",
+        "en_name": "Blitz",
+        "rarity": 5,
+        "class": "重装",
+        "approach": "限定寻访",
+        "release_time": "20210309"
+    },
+    {
         "cn_name": "闪灵",
         "en_name": "Shining",
         "rarity": 6,
@@ -1390,6 +1414,14 @@
         "class": "重装",
         "approach": "公开招募, 标准寻访",
         "release_time": "20190430"
+    },
+    {
+        "cn_name": "霜华",
+        "en_name": "Frost",
+        "rarity": 5,
+        "class": "特种",
+        "approach": "限定寻访",
+        "release_time": "20210309"
     },
     {
         "cn_name": "霜叶",
