@@ -20,6 +20,8 @@ logging.basicConfig(
     level=logging.INFO)
 
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN")
+PRODUCTION = os.getenv("PRODUCTION", 'False').lower() in ['true', '1']
+
 if TELEGRAM_BOT_TOKEN is None:
     raise Exception("Cannot find token in environment variable")
 PROXY_URL = "http://127.0.0.1:7890"
@@ -30,7 +32,7 @@ request_kwargs = {"proxy_url": PROXY_URL}
 updater = Updater(
     token=TELEGRAM_BOT_TOKEN,
     use_context=True,
-    request_kwargs=request_kwargs,
+    request_kwargs={} if PRODUCTION else request_kwargs,
 )
 dispatcher = updater.dispatcher
 assert dispatcher is not None
@@ -90,7 +92,7 @@ dot_dispatcher.add_command("卡池列表", show_banners)
 dot_dispatcher.add_command("更新卡池", update_banner)
 dot_dispatcher.add_command("卡池信息", banner_info)
 
-if os.getenv("PRODUCTION", 'False').lower() in ['true', '1']:
+if PRODUCTION:
     updater.start_webhook(
         listen="0.0.0.0",
         port=PORT,
@@ -98,7 +100,6 @@ if os.getenv("PRODUCTION", 'False').lower() in ['true', '1']:
     )
     updater.bot.setWebhook(
         f"https://exusiai-bot.herokuapp.com/{TELEGRAM_BOT_TOKEN}")
-
 else:
     updater.start_polling()
 
